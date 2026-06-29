@@ -4,6 +4,7 @@ const express = require("express");
 const cors = require("cors");
 const sheetRoutes = require("./routes/sheets");
 const patternRoutes = require("./routes/patterns");
+const problemRoutes = require("./routes/problems");
 
 const db = require("./config/db");
 
@@ -13,6 +14,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/sheets", sheetRoutes);
 app.use("/patterns", patternRoutes);
+app.use("/problems", problemRoutes);
 
 app.get("/", (req, res) => {
     res.send("🚀 DSA Quest Backend Running");

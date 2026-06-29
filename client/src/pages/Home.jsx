@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import api from "../services/api";
 
 function Home() {
 
     const [sheets, setSheets] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
 
@@ -29,14 +31,24 @@ function Home() {
 
     return (
 
-        <div>
+        <div style={{ padding: "30px" }}>
 
             <h1>Choose a DSA Sheet</h1>
 
             {
+
                 sheets.map((sheet) => (
 
-                    <div key={sheet.id}>
+                    <div
+                        key={sheet.id}
+                        onClick={() => navigate(`/patterns/${sheet.id}`)}
+                        style={{
+                            border: "1px solid black",
+                            padding: "20px",
+                            marginTop: "15px",
+                            cursor: "pointer"
+                        }}
+                    >
 
                         <h2>{sheet.name}</h2>
 
@@ -45,6 +57,7 @@ function Home() {
                     </div>
 
                 ))
+
             }
 
         </div>
