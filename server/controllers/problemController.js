@@ -25,7 +25,32 @@ const getProblems = (req, res) => {
     });
 
 };
+const countProblems = (req, res) => {
+
+    const sql = `
+        SELECT COUNT(*)
+        FROM problems
+    `;
+
+    db.query(sql, (err, result) => {
+
+        if (err) {
+
+            return res.status(500).json({
+                error: err.message
+            });
+
+        }
+        const probCount = {
+            "totalProblems" : result[0]['COUNT(*)']
+        }
+        res.json(probCount);
+
+    });
+
+};
 
 module.exports = {
-    getProblems
+    getProblems,
+    countProblems
 };
