@@ -1,0 +1,110 @@
+[
+  {
+    "pattern_id": 1,
+    "source_id": 683,
+    "sheet_id": 1,
+    "pattern_name": "Learn the basics"
+  },
+  {
+    "pattern_id": 2,
+    "source_id": 681,
+    "sheet_id": 1,
+    "pattern_name": "Learn Important Sorting Techniques"
+  },
+  {
+    "pattern_id": 3,
+    "source_id": 686,
+    "sheet_id": 1,
+    "pattern_name": "Solve Problems on Arrays [Easy -> Medium -> Hard]"
+  },
+  {
+    "pattern_id": 4,
+    "source_id": 673,
+    "sheet_id": 1,
+    "pattern_name": "Binary Search [1D, 2D Arrays, Search Space]"
+  },
+  {
+    "pattern_id": 5,
+    "source_id": 689,
+    "sheet_id": 1,
+    "pattern_name": "Strings [Basic and Medium]"
+  },
+  {
+    "pattern_id": 6,
+    "source_id": 682,
+    "sheet_id": 1,
+    "pattern_name": "Learn LinkedList [Single LL, Double LL, Medium, Hard Problems]"
+  },
+  {
+    "pattern_id": 7,
+    "source_id": 684,
+    "sheet_id": 1,
+    "pattern_name": "Recursion [PatternWise]"
+  },
+  {
+    "pattern_id": 8,
+    "source_id": 676,
+    "sheet_id": 1,
+    "pattern_name": "Bit Manipulation [Concepts & Problems]"
+  },
+  {
+    "pattern_id": 9,
+    "source_id": 687,
+    "sheet_id": 1,
+    "pattern_name": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
+  },
+  {
+    "pattern_id": 10,
+    "source_id": 685,
+    "sheet_id": 1,
+    "pattern_name": "Sliding Window & Two Pointer Combined Problems"
+  },
+  {
+    "pattern_id": 11,
+    "source_id": 680,
+    "sheet_id": 1,
+    "pattern_name": "Heaps [Learning, Medium, Hard Problems]"
+  },
+  {
+    "pattern_id": 12,
+    "source_id": 679,
+    "sheet_id": 1,
+    "pattern_name": "Greedy Algorithms [Easy, Medium/Hard]"
+  },
+  {
+    "pattern_id": 13,
+    "source_id": 675,
+    "sheet_id": 1,
+    "pattern_name": "Binary Trees [Traversals, Medium and Hard Problems]"
+  },
+  {
+    "pattern_id": 14,
+    "source_id": 674,
+    "sheet_id": 1,
+    "pattern_name": "Binary Search Trees [Concept and Problems]"
+  },
+  {
+    "pattern_id": 15,
+    "source_id": 678,
+    "sheet_id": 1,
+    "pattern_name": "Graphs [Concepts & Problems]"
+  },
+  {
+    "pattern_id": 16,
+    "source_id": 677,
+    "sheet_id": 1,
+    "pattern_name": "Dynamic Programming [Patterns and Problems]"
+  },
+  {
+    "pattern_id": 17,
+    "source_id": 690,
+    "sheet_id": 1,
+    "pattern_name": "Tries"
+  },
+  {
+    "pattern_id": 18,
+    "source_id": 688,
+    "sheet_id": 1,
+    "pattern_name": "Strings"
+  }
+]
