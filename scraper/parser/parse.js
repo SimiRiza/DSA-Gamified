@@ -71,11 +71,6 @@ function extractJSONObject(stream, start) {
     let insideString = false;
     let escaped = false;
 
-    // console.log("Started at index:", start);
-    // console.log("First 100 chars:");
-    // console.log(stream.substring(start, start + 100));
-    // console.log("----------------------------------");
-
     for (let i = start; i < stream.length; i++) {
 
         const ch = stream[i];
@@ -105,7 +100,6 @@ function extractJSONObject(stream, start) {
 
         if (ch === "{") {
             depth++;
-            // console.log(`OPEN  @ ${i}   depth = ${depth}`);
         }
 
         else if (ch === "}") {
@@ -124,16 +118,11 @@ const idx = stream.indexOf("sections");
 
 const titleIndex = stream.lastIndexOf('"title"', idx);
 
-// console.log("idx =", idx);
-// console.log("title =", titleIndex);
-
-// Find the opening {
 let start2 = titleIndex;
 
 while (stream[start2] !== "{") {
     start2--;
 }
-
 
 const objectText = extractJSONObject(stream, start2);
 const course = JSON.parse(objectText);
@@ -217,27 +206,6 @@ for (const category of course.sections) {
 
 }
 
-// console.log("===== SHEETS =====");
-// console.log(sheets);
-
-// console.log("\n===== PATTERNS =====");
-// console.log("Total patterns:", patterns.length);
-
-// console.log("\nFirst Pattern:");
-// console.log(patterns[0]);
-
-// console.log("\nLast Pattern:");
-// console.log(patterns[patterns.length - 1]);
-
-// console.log("Problems:", problems.length);
-// console.log(problems[0]);
-// console.log(problems[problems.length - 1]);
-
-// console.log("\n===== VALIDATION =====");
-
-// console.log("Sheets:", sheets.length);
-// console.log("Patterns:", patterns.length);
-// console.log("Problems:", problems.length);
 
 const duplicateProblemIds = new Set();
 let hasDuplicate = false;
@@ -250,7 +218,6 @@ for (const problem of problems) {
     duplicateProblemIds.add(problem.problem_id);
 }
 
-// console.log("Duplicate Problem IDs:", hasDuplicate ? "YES" : "NO");
 
 fs.writeFileSync(
     "sheets.json",

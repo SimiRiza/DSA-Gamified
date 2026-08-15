@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Patterns from "./pages/Patterns";
 import Problems from "./pages/Problems";
 import Registration from "./pages/Registration";
+import Login from "./pages/Login";
 
 function App() {
     return (
@@ -11,7 +12,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/patterns/:sheetId" element={<Patterns />} />
             <Route path="/problems/:patternId" element={<Problems />} />
-            <Route path="/login" element={<Registration />} />
+            <Route path="/register" element={<Registration />} />
+            <Route path="/login" element={<Login />} />
         </Routes>
     );
 }
