@@ -3,6 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const sheetRoutes = require("./routes/sheets");
+const loginRoutes = require("./routes/login");
 const patternRoutes = require("./routes/patterns");
 const problemRoutes = require("./routes/problems");
 const registrationRoutes = require("./routes/Registration");
@@ -17,6 +18,7 @@ app.use("/sheets", sheetRoutes);
 app.use("/patterns", patternRoutes);
 app.use("/problems", problemRoutes);
 app.use("/api", registrationRoutes);
+app.use("/api", loginRoutes);
 
 app.get("/", (req, res) => {
     res.send("🚀 DSA Quest Backend Running");
