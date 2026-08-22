@@ -20,6 +20,21 @@ function sqlValue(value) {
     return `'${String(value).replace(/'/g, "''")}'`;
 }
 
+function normalizeDifficulty(value) {
+    if (value === null || value === undefined) {
+        return null;
+    }
+
+    const str = String(value).trim().toLowerCase();
+
+    if (str === "easy") return "Easy";
+    if (str === "medium") return "Medium";
+    if (str === "hard") return "Hard";
+
+    return value;
+}
+
+
 const sheetRows = sheets.map((sheet) => {
     return `(${sqlValue(sheet.sheet_id)}, ${sqlValue(sheet.title)})`;
 });
@@ -56,7 +71,7 @@ const problemRows = problems.map((problem) => {
     const currentOrder = problemOrderMap[problem.pattern_id];
     problemOrderMap[problem.pattern_id]++;
 
-    return `(${sqlValue(problem.problem_id)}, ${sqlValue(problem.pattern_id)}, ${sqlValue(problem.subcategory_name)}, ${sqlValue(problem.problem_name)}, ${sqlValue(problem.difficulty)}, ${sqlValue(problem.official_article)}, ${sqlValue(problem.recommended_article)}, ${sqlValue(problem.official_youtube)}, ${sqlValue(problem.recommended_youtube)}, ${sqlValue(problem.official_leetcode)}, ${sqlValue(problem.recommended_leetcode)}, ${sqlValue(problem.plus)}, ${sqlValue(problem.official_editorial)}, ${sqlValue(problem.recommended_editorial)}, ${sqlValue(currentOrder)})`;
+    return `(${sqlValue(problem.problem_id)}, ${sqlValue(problem.pattern_id)}, ${sqlValue(problem.subcategory_name)}, ${sqlValue(problem.problem_name)}, ${sqlValue(normalizeDifficulty(problem.difficulty))}, ${sqlValue(problem.official_article)}, ${sqlValue(problem.recommended_article)}, ${sqlValue(problem.official_youtube)}, ${sqlValue(problem.recommended_youtube)}, ${sqlValue(problem.official_leetcode)}, ${sqlValue(problem.recommended_leetcode)}, ${sqlValue(problem.plus)}, ${sqlValue(problem.official_editorial)}, ${sqlValue(problem.recommended_editorial)}, ${sqlValue(currentOrder)})`;
 });
 
 const problemsSQL = `-- ============================================
