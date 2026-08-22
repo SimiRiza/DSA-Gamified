@@ -4,7 +4,7 @@ USE dsa_quest;
 -- SHEETS
 -- ============================================
 
-INSERT INTO sheets (name, description)
+INSERT IGNORE INTO sheets (name, description)
 VALUES
 
 (
@@ -21,7 +21,7 @@ VALUES
 -- PATTERNS
 -- ============================================
 
-INSERT INTO patterns
+INSERT IGNORE INTO patterns
 (sheet_id, name, order_number)
 
 VALUES
@@ -41,7 +41,7 @@ VALUES
 -- PROBLEMS
 -- ============================================
 
-INSERT INTO problems
+INSERT IGNORE INTO problems
 (pattern_id,title,difficulty,leetcode_url,youtube_url)
 
 VALUES
