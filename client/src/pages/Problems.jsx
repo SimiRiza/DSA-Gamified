@@ -7,6 +7,8 @@ function Problems() {
     const navigate = useNavigate();
 
     const [problems, setProblems] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState("");
 
     useEffect(() => {
         const fetchProblems = async () => {
@@ -14,12 +16,23 @@ function Problems() {
                 const response = await api.get(`/problems/${patternId}`);
                 setProblems(response.data);
             } catch (error) {
-                console.log(error);
+                console.error(error);
+                setError("Failed to load problems.");
+            } finally {
+                setLoading(false);
             }
         };
 
         fetchProblems();
     }, [patternId]);
+
+    if (loading) {
+        return <h2 style={{ padding: "50px" }}>Loading problems...</h2>;
+    }
+
+    if (error) {
+        return <h2 style={{ padding: "50px" }}>{error}</h2>;
+    }
 
     return (
         <div
@@ -44,9 +57,7 @@ function Problems() {
                     ← Back
                 </button>
 
-                <h1 style={{ marginBottom: "8px" }}>
-                    🎯 Problems
-                </h1>
+                <h1>🎯 Problems</h1>
 
                 <p
                     style={{
@@ -58,6 +69,7 @@ function Problems() {
                 </p>
 
                 {problems.map((problem, index) => (
+
                     <div
                         key={problem.id}
                         style={{
@@ -69,6 +81,7 @@ function Problems() {
                             boxShadow: "0 3px 10px rgba(0,0,0,0.07)"
                         }}
                     >
+
                         <div
                             style={{
                                 display: "flex",
@@ -76,7 +89,9 @@ function Problems() {
                                 alignItems: "center"
                             }}
                         >
+
                             <div>
+
                                 <div
                                     style={{
                                         color: "#888",
@@ -89,12 +104,22 @@ function Problems() {
 
                                 <h2
                                     style={{
-                                        margin: "0 0 12px 0",
+                                        margin: "0 0 10px 0",
                                         fontSize: "20px"
                                     }}
                                 >
                                     {problem.problem_name}
                                 </h2>
+
+                                <p
+                                    style={{
+                                        margin: "0 0 12px 0",
+                                        color: "#777"
+                                    }}
+                                >
+                                    {problem.subcategory_name}
+                                </p>
+
                             </div>
 
                             <span
@@ -109,8 +134,52 @@ function Problems() {
                             >
                                 {problem.difficulty}
                             </span>
+
                         </div>
+
+                        <div
+                            style={{
+                                display: "flex",
+                                gap: "10px",
+                                flexWrap: "wrap",
+                                marginTop: "15px"
+                            }}
+                        >
+
+                            {problem.official_article && (
+                                <a
+                                    href={problem.official_article}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    📖 Article
+                                </a>
+                            )}
+
+                            {problem.official_youtube && (
+                                <a
+                                    href={problem.official_youtube}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    ▶️ YouTube
+                                </a>
+                            )}
+
+                            {problem.official_leetcode && (
+                                <a
+                                    href={problem.official_leetcode}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    💻 LeetCode
+                                </a>
+                            )}
+
+                        </div>
+
                     </div>
+
                 ))}
 
             </div>
