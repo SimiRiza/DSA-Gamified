@@ -7,7 +7,7 @@ const getPatterns = (req, res) => {
     const sql = `
         SELECT *
         FROM patterns
-        WHERE sheet_id = ?
+        WHERE sheet_id = $1
         ORDER BY order_number;
     `;
 
@@ -19,7 +19,7 @@ const getPatterns = (req, res) => {
             });
         }
 
-        res.json(result);
+        res.json(result.rows);
 
     });
 

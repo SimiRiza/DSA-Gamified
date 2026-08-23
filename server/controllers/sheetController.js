@@ -12,7 +12,7 @@ const getSheets = (req, res) => {
             });
         }
 
-        res.json(result);
+        res.json(result.rows);
 
     });
 
@@ -31,7 +31,7 @@ const countSheets = (req, res) => {
         }
 
         const countObj = {
-        totalSheets : (result)[0]['COUNT(*)']
+        totalSheets : result.rows[0].count
         }
         res.json(countObj);
 

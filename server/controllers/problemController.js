@@ -7,7 +7,7 @@ const getProblems = (req, res) => {
     const sql = `
         SELECT *
         FROM problems
-        WHERE pattern_id = ?
+        WHERE pattern_id = $1
     `;
 
     db.query(sql, [patternId], (err, result) => {
@@ -20,7 +20,7 @@ const getProblems = (req, res) => {
 
         }
 
-        res.json(result);
+        res.json(result.rows);
 
     });
 
@@ -42,7 +42,7 @@ const countProblems = (req, res) => {
 
         }
         const probCount = {
-            "totalProblems" : result[0]['COUNT(*)']
+            "totalProblems" : result.rows[0].count
         }
         res.json(probCount);
 

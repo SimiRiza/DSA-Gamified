@@ -30,7 +30,7 @@ const registerUser = async (req, res) => {
 
         // Check if email already exists
         db.query(
-            "SELECT * FROM users WHERE email = ?",
+            "SELECT * FROM users WHERE email = $1",
             [email],
             async (err, results) => {
                 if (err) {
@@ -40,7 +40,7 @@ const registerUser = async (req, res) => {
                     });
                 }
 
-                if (results.length > 0) {
+                if (results.rows.length > 0) {
                     return res.status(409).json({
                         message: "Email already exists."
                     });
@@ -49,7 +49,7 @@ const registerUser = async (req, res) => {
                 const hashedPassword = await bcrypt.hash(password, 10);
 
                 db.query(
-                    "INSERT INTO users (name, email, password) VALUES (?, ?, ?)",
+                    "INSERT INTO users (name, email, password) VALUES ($1, $2, $3)",
                     [name, email, hashedPassword],
                     (err, result) => {
                         if (err) {

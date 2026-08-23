@@ -16,7 +16,7 @@ const loginUser = async (req, res) => {
 
         // Check if email doesnt exists
         db.query(
-            "SELECT * FROM users WHERE email = ?",
+            "SELECT * FROM users WHERE email = $1",
             [email],
             async (err, results) => {
                 if (err) {
@@ -26,15 +26,15 @@ const loginUser = async (req, res) => {
                     });
                 }
 
-                if (results.length === 0) {
+                if (results.rows.length === 0) {
                     return res.status(401).json({
                         message: "Invalid email or password."
                     });
                 }
-                const isMatch = await bcrypt.compare(password,results[0].password) 
+                const isMatch = await bcrypt.compare(password,results.rows[0].password) 
                 if(isMatch){
                     const token = jwt.sign(
-                        { id: results[0].id, email: results[0].email },
+                        { id: results.rows[0].id, email: results.rows[0].email },
                         process.env.JWT_SECRET,
                         { expiresIn: "1h" }
                     );
