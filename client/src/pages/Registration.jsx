@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Registration() {
     const [name, setName] = useState("");
@@ -35,6 +35,59 @@ function Registration() {
             setMessage("Something went wrong. Please try again.");
         }
     };
+
+    useEffect(() => {
+    const script = document.createElement("script");
+
+    script.src = "https://accounts.google.com/gsi/client";
+    script.async = true;
+    script.defer = true;
+
+    script.onload = () => {
+        window.google.accounts.id.initialize({
+            client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID,
+
+            callback: async (response) => {
+                try {
+                    const result = await fetch(
+                        "http://localhost:5000/api/auth/google",
+                        {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json",
+                            },
+                            body: JSON.stringify({
+                                credential: response.credential,
+                            }),
+                        }
+                    );
+
+                    const data = await result.json();
+
+                    console.log("Backend response:", data);
+                } catch (error) {
+                    console.error("Google login error:", error);
+                }
+            },
+        });
+
+        window.google.accounts.id.renderButton(
+            document.getElementById("google-button"),
+            {
+                theme: "outline",
+                size: "large",
+                text: "continue_with",
+                width: 300,
+            }
+        );
+    };
+
+    document.body.appendChild(script);
+
+    return () => {
+        document.body.removeChild(script);
+    };
+    }, []);
 
     return (
         <div>
@@ -76,7 +129,9 @@ function Registration() {
 
             <br />
             <br />
-
+            <div id="google-button"></div>
+            <br />
+            <br />
             <p>{message}</p>
         </div>
     );
