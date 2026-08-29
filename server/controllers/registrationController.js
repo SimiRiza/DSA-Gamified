@@ -1,5 +1,6 @@
 const db = require("../config/db");
 const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
 
 const registerUser = async (req, res) => {
     try {
@@ -41,16 +42,25 @@ const registerUser = async (req, res) => {
                 }
 
                 if (results.rows.length > 0) {
-                    return res.status(409).json({
-                        message: "Email already exists."
-                    });
+                    if(results.rows[0].google_id){
+                        return res.status(409).json({
+                            message: "This email is already registered with Google. Please continue with Google to log in."
+                        });
+                    }
+                    else {
+                        return res.status(409).json({
+                            message: "This email is already registered. Please log in instead."
+                        });
+                    }
                 }
 
                 const hashedPassword = await bcrypt.hash(password, 10);
 
-                db.query(
-                    "INSERT INTO users (name, email, password) VALUES ($1, $2, $3)",
-                    [name, email, hashedPassword],
+               db.query(
+                `INSERT INTO users (name, email, password)
+                VALUES ($1, $2, $3)
+                RETURNING id, name, email`,
+                [name, email, hashedPassword],
                     (err, result) => {
                         if (err) {
                             console.error(err);
@@ -59,8 +69,21 @@ const registerUser = async (req, res) => {
                             });
                         }
 
+                        const user = result.rows[0];
+                        const token = jwt.sign(
+                            {
+                                id: user.id,
+                                email: user.email
+                            },
+                            process.env.JWT_SECRET,
+                            {
+                                expiresIn: "7d"
+                            }
+                        );
+
                         res.status(201).json({
-                            message: "User registered successfully!"
+                            message: "User registered successfully!",
+                            token
                         });
                     }
                 );

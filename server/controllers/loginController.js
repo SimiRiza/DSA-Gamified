@@ -31,6 +31,13 @@ const loginUser = async (req, res) => {
                         message: "Invalid email or password."
                     });
                 }
+
+                if (results.rows[0].google_id && !results.rows[0].password) {
+                return res.status(401).json({
+                    message: "This email is already registered with Google. Please continue with Google to log in."
+                });
+                }
+
                 const isMatch = await bcrypt.compare(password,results.rows[0].password) 
                 if(isMatch){
                     const token = jwt.sign(

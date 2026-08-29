@@ -23,10 +23,10 @@ function Registration() {
             });
 
             const data = await response.json();
-
             setMessage(data.message);
 
             if (response.ok) {
+                localStorage.setItem("token", data.token);
                 setName("");
                 setEmail("");
                 setPassword("");
@@ -140,6 +140,12 @@ function Registration() {
             <br />
             <br />
             <p>{message}</p>
+            <p>
+            Already have an account?{" "}
+            <button onClick={() => navigate("/login")}>
+                Log in
+            </button>
+            </p>
         </div>
     );
 }

@@ -3,10 +3,6 @@ const jwt = require("jsonwebtoken");
 const pool = require("../config/db");
 
 const googleClient = new OAuth2Client(process.env.GOOGLE_CLIENT_ID);
-console.log(
-    "Google Client ID:",
-    process.env.GOOGLE_CLIENT_ID
-);
 const googleLogin = async (req, res) => {
     try {
         const { credential } = req.body;
