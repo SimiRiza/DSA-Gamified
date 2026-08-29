@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Registration() {
+    const navigate = useNavigate();
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -28,6 +30,7 @@ function Registration() {
                 setName("");
                 setEmail("");
                 setPassword("");
+                navigate("/");
             }
 
         } catch (error) {
@@ -63,8 +66,12 @@ function Registration() {
                     );
 
                     const data = await result.json();
-
-                    console.log("Backend response:", data);
+                  
+                    if (result.ok) {
+                    localStorage.setItem("token", data.token);
+                    navigate("/");
+                    }
+                    
                 } catch (error) {
                     console.error("Google login error:", error);
                 }
