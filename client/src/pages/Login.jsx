@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+    const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [message, setMessage] = useState("");
@@ -24,7 +26,7 @@ function Login() {
 
             if (response.ok) {
                 localStorage.setItem("token", data.token);
-                console.log("JWT:", data.token);
+                navigate("/");
             }
 
         } catch (error) {
@@ -33,29 +35,63 @@ function Login() {
         }
     };
 
-    const handleProfile = async () => {
-    const token = localStorage.getItem("token");
+    useEffect(() => {
+    const script = document.createElement("script");
 
-    try {
-        const response = await fetch(
-            "http://localhost:5000/api/profile",
-            {
-                method: "GET",
-                headers: {
-                    "Authorization": `Bearer ${token}`
+    script.src = "https://accounts.google.com/gsi/client";
+    script.async = true;
+    script.defer = true;
+
+    script.onload = () => {
+        window.google.accounts.id.initialize({
+            client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID,
+
+            callback: async (response) => {
+                try {
+                    const result = await fetch(
+                        "http://localhost:5000/api/auth/google",
+                        {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json",
+                            },
+                            body: JSON.stringify({
+                                credential: response.credential,
+                            }),
+                        }
+                    );
+
+                    const data = await result.json();
+                  
+                    if (result.ok) {
+                    localStorage.setItem("token", data.token);
+                    navigate("/");
+                    }
+                    
+                } catch (error) {
+                    console.error("Google login error:", error);
                 }
+            },
+        });
+
+        window.google.accounts.id.renderButton(
+            document.getElementById("google-button"),
+            {
+                theme: "outline",
+                size: "large",
+                text: "continue_with",
+                width: 300,
             }
         );
-
-        const data = await response.json();
-
-        console.log(data);
-
-    } catch (error) {
-        console.error(error);
-        setMessage("Something went wrong while fetching profile.");
-    }
     };
+
+    document.body.appendChild(script);
+
+    return () => {
+        document.body.removeChild(script);
+    };
+    }, []);
+
 
     return (
         <div>
@@ -83,10 +119,16 @@ function Login() {
                 Login
             </button>
 
+            <div id="google-button"></div>
+            <br /><br />
+
             <p>{message}</p>
-            <button onClick={handleProfile}>
-            View My Profile
+            <p>
+            Don't have an account?{" "}
+            <button onClick={() => navigate("/register")}>
+                Register
             </button>
+            </p>
         </div>
     );
 }

@@ -1,4 +1,5 @@
 require("dotenv").config();
+const googleAuthRoutes = require("./routes/googleAuth");
 
 const express = require("express");
 const cors = require("cors");
@@ -19,7 +20,7 @@ app.use("/patterns", patternRoutes);
 app.use("/problems", problemRoutes);
 app.use("/api", registrationRoutes);
 app.use("/api", loginRoutes);
-
+app.use("/api/auth/google", googleAuthRoutes);
 app.get("/", (req, res) => {
     res.send("🚀 DSA Quest Backend Running");
 });
