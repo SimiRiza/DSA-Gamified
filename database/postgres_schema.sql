@@ -68,19 +68,11 @@ CREATE TABLE problems (
     problem_name VARCHAR(500) NOT NULL,
     difficulty VARCHAR(20) NOT NULL,
 
-    official_article TEXT,
-    recommended_article TEXT,
-
-    official_youtube TEXT,
-    recommended_youtube TEXT,
-
-    official_leetcode TEXT,
-    recommended_leetcode TEXT,
-
-    plus TEXT,
-
-    official_editorial TEXT,
-    recommended_editorial TEXT,
+    -- Available resources
+    practice_url TEXT,
+    youtube_url TEXT,
+    article_url TEXT,
+    leetcode_url TEXT,
 
     order_number INTEGER NOT NULL,
 
@@ -93,7 +85,9 @@ CREATE TABLE problems (
         UNIQUE (pattern_id, order_number),
 
     CONSTRAINT chk_problem_difficulty
-        CHECK (difficulty IN ('Easy', 'Medium', 'Hard'))
+        CHECK (
+            difficulty IN ('Easy', 'Medium', 'Hard')
+        )
 );
 
 

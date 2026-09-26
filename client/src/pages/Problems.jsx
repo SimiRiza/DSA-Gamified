@@ -146,33 +146,79 @@ function Problems() {
                             }}
                         >
 
-                            {problem.official_article && (
+                            {problem.practice_url && (
                                 <a
-                                    href={problem.official_article}
+                                    href={problem.practice_url}
                                     target="_blank"
                                     rel="noreferrer"
+                                    style={{
+                                        padding: "8px 14px",
+                                        background: "#eef2ff",
+                                        color: "#3730a3",
+                                        borderRadius: "8px",
+                                        textDecoration: "none",
+                                        fontSize: "14px",
+                                        fontWeight: "500"
+                                    }}
                                 >
-                                    📖 Article
+                                    🎯 Solve on TUF
                                 </a>
                             )}
 
-                            {problem.official_youtube && (
+                            {problem.youtube_url && (
                                 <a
-                                    href={problem.official_youtube}
+                                    href={problem.youtube_url}
                                     target="_blank"
                                     rel="noreferrer"
+                                    style={{
+                                        padding: "8px 14px",
+                                        background: "#fff1f2",
+                                        color: "#be123c",
+                                        borderRadius: "8px",
+                                        textDecoration: "none",
+                                        fontSize: "14px",
+                                        fontWeight: "500"
+                                    }}
                                 >
-                                    ▶️ YouTube
+                                    ▶️ Watch YouTube
                                 </a>
                             )}
 
-                            {problem.official_leetcode && (
+                            {problem.article_url && (
                                 <a
-                                    href={problem.official_leetcode}
+                                    href={problem.article_url}
                                     target="_blank"
                                     rel="noreferrer"
+                                    style={{
+                                        padding: "8px 14px",
+                                        background: "#f0fdf4",
+                                        color: "#166534",
+                                        borderRadius: "8px",
+                                        textDecoration: "none",
+                                        fontSize: "14px",
+                                        fontWeight: "500"
+                                    }}
                                 >
-                                    💻 LeetCode
+                                    📖 Read Article
+                                </a>
+                            )}
+
+                            {problem.leetcode_url && (
+                                <a
+                                    href={problem.leetcode_url}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    style={{
+                                        padding: "8px 14px",
+                                        background: "#fff7ed",
+                                        color: "#c2410c",
+                                        borderRadius: "8px",
+                                        textDecoration: "none",
+                                        fontSize: "14px",
+                                        fontWeight: "500"
+                                    }}
+                                >
+                                    💻 Solve on LeetCode
                                 </a>
                             )}
 
