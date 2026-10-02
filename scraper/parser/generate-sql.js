@@ -20,6 +20,15 @@ const problemsPath = path.join(
     "problems.json"
 );
 
+// --------------------------------------------------
+// MANUAL EDITORIALS
+// --------------------------------------------------
+
+const manualEditorialsPath = path.join(
+    __dirname,
+    "manual_editorials.json"
+);
+
 const outputPath = path.join(
     __dirname,
     "../../database/seed.sql"
@@ -40,6 +49,24 @@ const patterns = JSON.parse(
 const problems = JSON.parse(
     fs.readFileSync(problemsPath, "utf8")
 );
+
+// --------------------------------------------------
+// READ MANUAL EDITORIALS
+// --------------------------------------------------
+
+// If manual_editorials.json does not exist,
+// use an empty object instead of crashing.
+
+let manualEditorials = {};
+
+if (fs.existsSync(manualEditorialsPath)) {
+    manualEditorials = JSON.parse(
+        fs.readFileSync(
+            manualEditorialsPath,
+            "utf8"
+        )
+    );
+}
 
 // --------------------------------------------------
 // SQL VALUE HELPER
@@ -90,6 +117,28 @@ function normalizeDifficulty(value) {
     }
 
     return value;
+}
+
+// --------------------------------------------------
+// GET RECOMMENDED EDITORIAL
+// --------------------------------------------------
+
+function getRecommendedEditorial(problem) {
+
+    // If LeetCode exists,
+    // we do NOT need a recommended editorial.
+    if (problem.leetcode_url) {
+        return null;
+    }
+
+    // For problems without LeetCode,
+    // look for a manually curated editorial
+    // using the exact problem name.
+    return (
+        manualEditorials[
+            problem.problem_name
+        ] || null
+    );
 }
 
 // --------------------------------------------------
@@ -157,6 +206,14 @@ ${patternsRows.join(",\n")};
 const problemOrderMap = {};
 
 // --------------------------------------------------
+// EDITORIAL COUNTERS
+// --------------------------------------------------
+
+let recommendedEditorialCount = 0;
+
+let missingRecommendedEditorialCount = 0;
+
+// --------------------------------------------------
 // PROBLEMS
 // --------------------------------------------------
 
@@ -180,6 +237,24 @@ const problemRows = problems.map(
             problem.pattern_id
         ]++;
 
+        // ------------------------------------------
+        // RECOMMENDED EDITORIAL
+        // ------------------------------------------
+
+        const recommendedEditorial =
+            getRecommendedEditorial(problem);
+
+        if (recommendedEditorial) {
+            recommendedEditorialCount++;
+        }
+        else if (!problem.leetcode_url) {
+            missingRecommendedEditorialCount++;
+        }
+
+        // ------------------------------------------
+        // SQL ROW
+        // ------------------------------------------
+
         return `(
             ${sqlValue(problem.problem_id)},
             ${sqlValue(problem.pattern_id)},
@@ -194,6 +269,7 @@ const problemRows = problems.map(
             ${sqlValue(problem.youtube_url)},
             ${sqlValue(problem.article_url)},
             ${sqlValue(problem.leetcode_url)},
+            ${sqlValue(recommendedEditorial)},
             ${sqlValue(currentOrder)}
         )`;
     }
@@ -214,6 +290,7 @@ INSERT INTO problems (
     youtube_url,
     article_url,
     leetcode_url,
+    recommended_editorial_url,
     order_number
 )
 VALUES
@@ -262,4 +339,14 @@ console.log(
 console.log(
     "Inserted problems:",
     problems.length
+);
+
+console.log(
+    "Recommended editorials applied:",
+    recommendedEditorialCount
+);
+
+console.log(
+    "Problems without LeetCode and without recommended editorial:",
+    missingRecommendedEditorialCount
 );

@@ -146,6 +146,7 @@ function Problems() {
                             }}
                         >
 
+                            {/* TUF */}
                             {problem.practice_url && (
                                 <a
                                     href={problem.practice_url}
@@ -165,6 +166,7 @@ function Problems() {
                                 </a>
                             )}
 
+                            {/* YouTube */}
                             {problem.youtube_url && (
                                 <a
                                     href={problem.youtube_url}
@@ -184,6 +186,7 @@ function Problems() {
                                 </a>
                             )}
 
+                            {/* Article */}
                             {problem.article_url && (
                                 <a
                                     href={problem.article_url}
@@ -203,6 +206,7 @@ function Problems() {
                                 </a>
                             )}
 
+                            {/* LeetCode */}
                             {problem.leetcode_url && (
                                 <a
                                     href={problem.leetcode_url}
@@ -222,7 +226,47 @@ function Problems() {
                                 </a>
                             )}
 
+                            {/* Recommended Editorial */}
+                            {problem.recommended_editorial_url && (
+                                <a
+                                    href={problem.recommended_editorial_url}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    style={{
+                                        padding: "8px 14px",
+                                        background: "#f5f3ff",
+                                        color: "#6d28d9",
+                                        borderRadius: "8px",
+                                        textDecoration: "none",
+                                        fontSize: "14px",
+                                        fontWeight: "600"
+                                    }}
+                                >
+                                    📚 Recommended Editorial
+                                </a>
+                            )}
+
                         </div>
+
+                        {/* Explanation for recommended editorial */}
+                        {!problem.leetcode_url &&
+                            problem.recommended_editorial_url && (
+                                <div
+                                    style={{
+                                        marginTop: "14px",
+                                        padding: "10px 14px",
+                                        background: "#faf5ff",
+                                        borderRadius: "8px",
+                                        color: "#6b21a8",
+                                        fontSize: "13px",
+                                        lineHeight: "1.5"
+                                    }}
+                                >
+                                    💡 LeetCode isn't available for this
+                                    problem, so we've provided a recommended
+                                    editorial instead.
+                                </div>
+                            )}
 
                     </div>
 

@@ -73,6 +73,7 @@ CREATE TABLE problems (
     youtube_url TEXT,
     article_url TEXT,
     leetcode_url TEXT,
+    recommended_editorial_url TEXT,
 
     order_number INTEGER NOT NULL,
 

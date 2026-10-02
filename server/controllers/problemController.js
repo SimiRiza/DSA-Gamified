@@ -14,7 +14,8 @@ const getProblems = (req, res) => {
             practice_url,
             youtube_url,
             article_url,
-            leetcode_url
+            leetcode_url,
+            recommended_editorial_url
         FROM problems
         WHERE pattern_id = $1
         ORDER BY id;

@@ -187,6 +187,7 @@ INSERT INTO problems (
     youtube_url,
     article_url,
     leetcode_url,
+    recommended_editorial_url,
     order_number
 )
 VALUES
@@ -200,6 +201,7 @@ VALUES
             'https://youtu.be/qbwJ1U6I-IU',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/breaking-the-myth-dsa-is-language-independent',
             NULL,
+            NULL,
             1
         ),
 (
@@ -211,6 +213,7 @@ VALUES
             NULL,
             'https://youtu.be/y_tiNJXgA2U',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/programming-and-computers',
+            NULL,
             NULL,
             2
         ),
@@ -224,6 +227,7 @@ VALUES
             'https://youtu.be/iv7jtDODKrg',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/how-to-think-like-a-programmer',
             NULL,
+            NULL,
             3
         ),
 (
@@ -235,6 +239,7 @@ VALUES
             NULL,
             'https://youtu.be/ynlGEO4bhiI',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/flowcharts-and-pseudocode',
+            NULL,
             NULL,
             4
         ),
@@ -248,6 +253,7 @@ VALUES
             'https://youtu.be/usbMw83zi4c',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/flowchart-problem-solving',
             NULL,
+            NULL,
             5
         ),
 (
@@ -259,6 +265,7 @@ VALUES
             NULL,
             'https://youtu.be/Chf3JhFO4nU',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/dry-runs-edge-cases-and-debugging',
+            NULL,
             NULL,
             6
         ),
@@ -272,6 +279,7 @@ VALUES
             'https://youtu.be/qY_PY3o-pd4',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/programming-languages-and-choosing-a-path',
             NULL,
+            NULL,
             7
         ),
 (
@@ -280,6 +288,7 @@ VALUES
             'Language Basics',
             'Learn C++',
             'Easy',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -296,6 +305,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            NULL,
             9
         ),
 (
@@ -304,6 +314,7 @@ VALUES
             'Language Basics',
             'Learn Python',
             'Easy',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -320,6 +331,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            NULL,
             11
         ),
 (
@@ -330,6 +342,7 @@ VALUES
             'Easy',
             NULL,
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
+            NULL,
             NULL,
             NULL,
             12
@@ -344,6 +357,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/javascript/javascript-program-to-print-square-star-pattern/',
             13
         ),
 (
@@ -356,6 +370,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/program-to-print-right-half-pyramid-pattern-star-pattern/',
             14
         ),
 (
@@ -368,6 +383,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/java/java-pattern-programs/',
             15
         ),
 (
@@ -380,6 +396,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/java/java-pattern-programs/',
             16
         ),
 (
@@ -392,6 +409,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/pattern-printing-problems/',
             17
         ),
 (
@@ -404,6 +422,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/pattern-printing-problems/',
             18
         ),
 (
@@ -416,6 +435,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/javascript/javascript-program-to-print-pyramid-star-pattern/',
             19
         ),
 (
@@ -428,6 +448,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/pattern-printing-problems/',
             20
         ),
 (
@@ -440,6 +461,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/pattern-printing-problems/',
             21
         ),
 (
@@ -452,6 +474,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/pattern-printing-problems/',
             22
         ),
 (
@@ -464,6 +487,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/pattern-printing-problems/',
             23
         ),
 (
@@ -476,6 +500,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/pattern-printing-problems/',
             24
         ),
 (
@@ -488,6 +513,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/pattern-printing-problems/',
             25
         ),
 (
@@ -500,6 +526,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/java/java-pattern-programs/',
             26
         ),
 (
@@ -512,6 +539,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/java/java-pattern-programs/',
             27
         ),
 (
@@ -524,6 +552,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/java/java-pattern-programs/',
             28
         ),
 (
@@ -536,6 +565,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/java/java-pattern-programs/',
             29
         ),
 (
@@ -548,6 +578,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/java/java-pattern-programs/',
             30
         ),
 (
@@ -560,6 +591,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/pattern-printing-problems/',
             31
         ),
 (
@@ -572,6 +604,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/program-to-print-butterfly-pattern-star-pattern/',
             32
         ),
 (
@@ -584,6 +617,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/program-to-print-hollow-rectangle-or-square-star-patterns/',
             33
         ),
 (
@@ -596,6 +630,7 @@ VALUES
             'https://www.youtube.com/watch?v=tNm_NNSB3_w&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/pattern-printing-problems/',
             34
         ),
 (
@@ -606,6 +641,7 @@ VALUES
             'Easy',
             NULL,
             'https://youtu.be/FPu9Uld7W-E',
+            NULL,
             NULL,
             NULL,
             35
@@ -620,6 +656,7 @@ VALUES
             'https://www.youtube.com/watch?v=RRVYpIET_RU',
             NULL,
             NULL,
+            NULL,
             36
         ),
 (
@@ -628,6 +665,7 @@ VALUES
             'Standard Libraries & Collections',
             'Java Collections',
             'Easy',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -644,6 +682,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            NULL,
             38
         ),
 (
@@ -652,6 +691,7 @@ VALUES
             'Standard Libraries & Collections',
             'Python Libraries Part 2',
             'Easy',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -668,6 +708,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            NULL,
             40
         ),
 (
@@ -676,6 +717,7 @@ VALUES
             'Concept Basics',
             'Basic Arrays',
             'Easy',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -692,6 +734,7 @@ VALUES
             'https://www.youtube.com/watch?v=KEs5UyBJ39g',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/hashing-data-structures',
             NULL,
+            NULL,
             42
         ),
 (
@@ -700,6 +743,7 @@ VALUES
             'Concept Basics',
             'Basic String',
             'Easy',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -716,6 +760,7 @@ VALUES
             'https://youtu.be/1xNbjMdbjug',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/count-digits-in-a-number',
             NULL,
+            'https://www.geeksforgeeks.org/problems/count-total-digits-in-a-number/1',
             44
         ),
 (
@@ -728,6 +773,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/count-number-of-odd-digits-in-a-number/',
             45
         ),
 (
@@ -740,6 +786,7 @@ VALUES
             'https://youtu.be/1xNbjMdbjug?t=930',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/reverse-digits-of-a-number',
             'https://leetcode.com/problems/reverse-integer/',
+            NULL,
             46
         ),
 (
@@ -752,6 +799,7 @@ VALUES
             'https://youtu.be/1xNbjMdbjug?t=1230',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/check-whether-a-number-is-a-palindrome',
             'https://leetcode.com/problems/palindrome-number/',
+            NULL,
             47
         ),
 (
@@ -764,6 +812,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/largest-digit-in-a-number/',
             48
         ),
 (
@@ -776,6 +825,7 @@ VALUES
             'https://www.youtube.com/watch?v=69ZCDFy-OUo&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/program-for-factorial-of-a-number/',
             49
         ),
 (
@@ -788,6 +838,7 @@ VALUES
             'https://youtu.be/1xNbjMdbjug?t=1418',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/armstrong-number',
             'https://leetcode.com/problems/armstrong-number/',
+            NULL,
             50
         ),
 (
@@ -800,6 +851,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/perfect-number/',
+            NULL,
             51
         ),
 (
@@ -812,6 +864,7 @@ VALUES
             'https://youtu.be/1xNbjMdbjug?t=2381',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/check-whether-a-number-is-prime',
             NULL,
+            'https://www.geeksforgeeks.org/dsa/check-for-prime-number/',
             52
         ),
 (
@@ -824,6 +877,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/count-primes/',
+            NULL,
             53
         ),
 (
@@ -836,6 +890,7 @@ VALUES
             'https://youtu.be/1xNbjMdbjug?t=2684',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/gcd-euclidean-algorithm',
             NULL,
+            'https://www.geeksforgeeks.org/problems/gcd-of-two-numbers3459/1',
             54
         ),
 (
@@ -848,6 +903,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/problems/lcm-of-two-numbers/1',
             55
         ),
 (
@@ -860,6 +916,7 @@ VALUES
             'https://youtu.be/1xNbjMdbjug?t=1580',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/find-all-factors-of-a-natural-number/',
             56
         ),
 (
@@ -872,6 +929,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/array-sum/',
             57
         ),
 (
@@ -884,6 +942,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/problems/count-odd-even/1',
             58
         ),
 (
@@ -896,6 +955,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/program-check-array-sorted-not-iterative-recursive/',
             59
         ),
 (
@@ -908,6 +968,7 @@ VALUES
             'https://www.youtube.com/watch?v=twuC1F6gLI8&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=4',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/problems/reverse-an-array/1',
             60
         ),
 (
@@ -920,6 +981,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/frequency-of-the-most-frequent-element/',
+            NULL,
             61
         ),
 (
@@ -932,6 +994,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/find-second-most-frequent-element-in-an-array/',
             62
         ),
 (
@@ -944,6 +1007,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/find-the-sum-of-the-highest-and-lowest-frequency-in-an-array/',
             63
         ),
 (
@@ -956,6 +1020,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/reverse-string/',
+            NULL,
             64
         ),
 (
@@ -968,6 +1033,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/valid-palindrome/',
+            NULL,
             65
         ),
 (
@@ -980,6 +1046,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/largest-odd-number-in-string/',
+            NULL,
             66
         ),
 (
@@ -992,6 +1059,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/longest-common-prefix/',
+            NULL,
             67
         ),
 (
@@ -1004,6 +1072,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/isomorphic-strings/',
+            NULL,
             68
         ),
 (
@@ -1016,6 +1085,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/rotate-string/',
+            NULL,
             69
         ),
 (
@@ -1028,6 +1098,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/valid-anagram/',
+            NULL,
             70
         ),
 (
@@ -1040,6 +1111,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/sort-characters-by-frequency/',
+            NULL,
             71
         ),
 (
@@ -1048,6 +1120,7 @@ VALUES
             'Basic Recursion',
             'Recursion Theory',
             'Easy',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -1064,6 +1137,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            NULL,
             73
         ),
 (
@@ -1076,6 +1150,7 @@ VALUES
             'https://www.youtube.com/watch?v=69ZCDFy-OUo&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=3',
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/sum-of-natural-numbers-using-recursion/',
             74
         ),
 (
@@ -1088,6 +1163,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/program-for-factorial-of-a-number/',
             75
         ),
 (
@@ -1100,6 +1176,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/sum-array-elements-using-recursion/',
             76
         ),
 (
@@ -1112,6 +1189,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/reverse-string/',
+            NULL,
             77
         ),
 (
@@ -1124,6 +1202,7 @@ VALUES
             'https://www.youtube.com/watch?v=twuC1F6gLI8&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=4',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/check-whether-a-string-is-a-palindrome',
             'https://leetcode.com/problems/valid-palindrome/',
+            NULL,
             78
         ),
 (
@@ -1136,6 +1215,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/check-for-prime-number/',
             79
         ),
 (
@@ -1148,6 +1228,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/program-to-reverse-an-array/',
             80
         ),
 (
@@ -1160,6 +1241,7 @@ VALUES
             'https://youtu.be/37E9ckMDdTk?t=17224',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/check-if-an-array-is-sorted-in-ascending-order',
             'https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/#:~:text=Input%3A%20nums%20%3D%20%5B2%2C,no%20rotation)%20to%20make%20nums.',
+            NULL,
             81
         ),
 (
@@ -1172,6 +1254,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            'https://www.geeksforgeeks.org/dsa/program-for-sum-of-the-digits-of-a-given-number/',
             82
         ),
 (
@@ -1184,6 +1267,7 @@ VALUES
             'https://www.youtube.com/watch?v=kvRjNm4rVBE&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=5',
             NULL,
             'https://leetcode.com/problems/fibonacci-number/',
+            NULL,
             83
         ),
 (
@@ -1195,6 +1279,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/selection-sort',
             'https://youtu.be/HGk_ypEuS24?t=167',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/selection-sort-algorithm',
+            NULL,
             NULL,
             1
         ),
@@ -1208,6 +1293,7 @@ VALUES
             'https://youtu.be/HGk_ypEuS24?t=1061',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/bubble-sort-algorithm',
             NULL,
+            NULL,
             2
         ),
 (
@@ -1219,6 +1305,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/insertion-sorting',
             'https://youtu.be/HGk_ypEuS24?t=1900',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/insertion-sort-algorithm',
+            NULL,
             NULL,
             3
         ),
@@ -1232,6 +1319,7 @@ VALUES
             'https://youtu.be/ogjf7ORKfd8',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/merge-sort-algorithm',
             NULL,
+            NULL,
             4
         ),
 (
@@ -1244,6 +1332,7 @@ VALUES
             'https://youtu.be/WIrA4YexLRQ',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/quick-sort-algorithm',
             NULL,
+            NULL,
             5
         ),
 (
@@ -1253,6 +1342,7 @@ VALUES
             'Recursive Bubble Sort',
             'Easy',
             'https://takeuforward.org/practice/dsa/recursive-bubble-sort',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -1268,6 +1358,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            NULL,
             7
         ),
 (
@@ -1278,6 +1369,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/linear-search',
             'https://youtu.be/wvcQg43_V8U?t=2465',
+            NULL,
             NULL,
             NULL,
             1
@@ -1292,6 +1384,7 @@ VALUES
             'https://youtu.be/37E9ckMDdTk?t=526',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/find-the-largest-element-in-an-array',
             NULL,
+            NULL,
             2
         ),
 (
@@ -1302,6 +1395,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/second-largest-element',
             'https://youtu.be/37E9ckMDdTk?t=810',
+            NULL,
             NULL,
             NULL,
             3
@@ -1316,6 +1410,7 @@ VALUES
             'https://youtu.be/bYWLJb3vCWY?t=1124',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/maximum-consecutive-ones-in-a-binary-array',
             'https://leetcode.com/problems/max-consecutive-ones/',
+            NULL,
             4
         ),
 (
@@ -1328,6 +1423,7 @@ VALUES
             'https://youtu.be/wvcQg43_V8U?t=61',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/left-rotate-array-by-one',
             'https://leetcode.com/problems/rotate-array/',
+            NULL,
             5
         ),
 (
@@ -1340,6 +1436,7 @@ VALUES
             'https://youtu.be/wvcQg43_V8U?t=485',
             NULL,
             'https://leetcode.com/problems/rotate-array/',
+            NULL,
             6
         ),
 (
@@ -1352,6 +1449,7 @@ VALUES
             'https://youtu.be/wvcQg43_V8U?t=1633',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/move-zeros-to-the-end-of-an-array',
             'https://leetcode.com/problems/move-zeroes/',
+            NULL,
             7
         ),
 (
@@ -1364,6 +1462,7 @@ VALUES
             'https://youtu.be/37E9ckMDdTk?t=1887',
             NULL,
             'https://leetcode.com/problems/remove-duplicates-from-sorted-array/',
+            NULL,
             8
         ),
 (
@@ -1376,6 +1475,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/missing-number/',
+            NULL,
             9
         ),
 (
@@ -1388,6 +1488,7 @@ VALUES
             'https://youtu.be/wvcQg43_V8U?t=2584',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/union-of-two-sorted-arrays',
             NULL,
+            NULL,
             10
         ),
 (
@@ -1397,6 +1498,7 @@ VALUES
             'Intersection of two sorted arrays',
             'Easy',
             'https://takeuforward.org/practice/dsa/intersection-of-two-sorted-arrays',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -1412,6 +1514,7 @@ VALUES
             'https://youtu.be/nP_ns3uSh80',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/majority-element-n-by-2',
             'https://leetcode.com/problems/majority-element/',
+            NULL,
             12
         ),
 (
@@ -1424,6 +1527,7 @@ VALUES
             'https://youtu.be/cHrH9CQ8pmY',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/leaders-in-an-array',
             'https://leetcode.com/problems/buildings-with-an-ocean-view/',
+            NULL,
             13
         ),
 (
@@ -1436,6 +1540,7 @@ VALUES
             'https://youtu.be/h4aBagy4Uok',
             NULL,
             'https://leetcode.com/problems/rearrange-array-elements-by-sign/',
+            NULL,
             14
         ),
 (
@@ -1448,6 +1553,7 @@ VALUES
             'https://youtu.be/3Zv-s9UUrFM',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/spiral-traversal-of-a-matrix',
             'https://leetcode.com/problems/spiral-matrix/',
+            NULL,
             15
         ),
 (
@@ -1460,6 +1566,7 @@ VALUES
             'https://youtu.be/bR7mQgwQ_o8',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/pascals-triangle-first-n-rows',
             'https://leetcode.com/problems/pascals-triangle/',
+            NULL,
             16
         ),
 (
@@ -1472,6 +1579,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/pascals-triangle-ii/',
+            NULL,
             17
         ),
 (
@@ -1481,6 +1589,7 @@ VALUES
             'Pascal''s Triangle III',
             'Easy',
             'https://takeuforward.org/practice/dsa/pascals-triangle-iii',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -1496,6 +1605,7 @@ VALUES
             'https://youtu.be/Z0R2u6gd3GU',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/rotate-matrix-90-degrees-clockwise',
             'https://leetcode.com/problems/rotate-image/',
+            NULL,
             19
         ),
 (
@@ -1508,6 +1618,7 @@ VALUES
             'https://youtu.be/N0MgLvceX7M',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/set-matrix-zeroes',
             'https://leetcode.com/problems/set-matrix-zeroes/',
+            NULL,
             20
         ),
 (
@@ -1520,6 +1631,7 @@ VALUES
             'https://youtu.be/UXDSeD9mN-k',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/two-sum',
             'https://leetcode.com/problems/two-sum/',
+            NULL,
             21
         ),
 (
@@ -1532,6 +1644,7 @@ VALUES
             'https://youtu.be/DhFh8Kw7ymk',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/3sum',
             'https://leetcode.com/problems/3sum/',
+            NULL,
             22
         ),
 (
@@ -1544,6 +1657,7 @@ VALUES
             'https://youtu.be/eD95WRfh81c',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/4sum',
             'https://leetcode.com/problems/4sum/',
+            NULL,
             23
         ),
 (
@@ -1556,6 +1670,7 @@ VALUES
             'https://youtu.be/tp8JIuCXBaU',
             NULL,
             'https://leetcode.com/problems/sort-colors/',
+            NULL,
             24
         ),
 (
@@ -1568,6 +1683,7 @@ VALUES
             'https://youtu.be/AHZpyENo7k4',
             NULL,
             'https://leetcode.com/problems/maximum-subarray/',
+            NULL,
             25
         ),
 (
@@ -1580,6 +1696,7 @@ VALUES
             'https://youtu.be/JDOXKqF60RQ',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/next-permutation',
             'https://leetcode.com/problems/next-permutation/',
+            NULL,
             26
         ),
 (
@@ -1592,6 +1709,7 @@ VALUES
             'https://youtu.be/vwZj1K0e9U8',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/majority-element-ii-n-by-3',
             'https://leetcode.com/problems/majority-element-ii/',
+            NULL,
             27
         ),
 (
@@ -1604,6 +1722,7 @@ VALUES
             'https://youtu.be/2D0D8HE6uak',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/find-the-missing-and-repeating-numbers-in-an-array',
             NULL,
+            NULL,
             28
         ),
 (
@@ -1614,6 +1733,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/count-inversions',
             'https://youtu.be/AseUmwVNaoY',
+            NULL,
             NULL,
             NULL,
             29
@@ -1628,6 +1748,7 @@ VALUES
             'https://youtu.be/0e4bZaP3MDI',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/count-reverse-pairs',
             'https://leetcode.com/problems/reverse-pairs/',
+            NULL,
             30
         ),
 (
@@ -1640,6 +1761,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/maximum-product-subarray/',
+            NULL,
             31
         ),
 (
@@ -1652,6 +1774,7 @@ VALUES
             'https://youtu.be/n7uwj04E0I4',
             NULL,
             'https://leetcode.com/problems/merge-sorted-array/',
+            NULL,
             32
         ),
 (
@@ -1663,6 +1786,7 @@ VALUES
             NULL,
             'https://www.youtube.com/watch?v=KEs5UyBJ39g',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/hashing-data-structures',
+            NULL,
             NULL,
             1
         ),
@@ -1676,6 +1800,7 @@ VALUES
             'https://youtu.be/oO5uLE7EUlM',
             NULL,
             'https://leetcode.com/problems/longest-consecutive-sequence/',
+            NULL,
             2
         ),
 (
@@ -1688,6 +1813,7 @@ VALUES
             'https://youtu.be/frf7qxiN2qU',
             NULL,
             'https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/',
+            NULL,
             3
         ),
 (
@@ -1700,6 +1826,7 @@ VALUES
             'https://www.youtube.com/watch?v=xmguZ6GbatA&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=23',
             NULL,
             'https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/',
+            NULL,
             4
         ),
 (
@@ -1712,6 +1839,7 @@ VALUES
             'https://www.youtube.com/watch?v=xvNwoz-ufXA&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&index=32',
             NULL,
             'https://leetcode.com/problems/subarray-sum-equals-k/',
+            NULL,
             5
         ),
 (
@@ -1723,6 +1851,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/count-subarrays-with-given-xor-k',
             'https://youtu.be/eZr-6p0B7ME',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/count-subarrays-with-a-given-xor-k',
+            NULL,
             NULL,
             6
         ),
@@ -1736,6 +1865,7 @@ VALUES
             'https://youtu.be/MHf6awe89xw',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/binary-search-algorithm',
             'https://leetcode.com/problems/binary-search/',
+            NULL,
             1
         ),
 (
@@ -1747,6 +1877,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/lower-bound-',
             'https://youtu.be/6zhGS79oQ4k',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/lower-bound-in-sorted-array',
+            NULL,
             NULL,
             2
         ),
@@ -1760,6 +1891,7 @@ VALUES
             'https://youtu.be/6zhGS79oQ4k',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/upper-bound-in-sorted-array',
             NULL,
+            NULL,
             3
         ),
 (
@@ -1772,6 +1904,7 @@ VALUES
             'https://youtu.be/6zhGS79oQ4k',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/search-insert-position',
             'https://leetcode.com/problems/search-insert-position/',
+            NULL,
             4
         ),
 (
@@ -1782,6 +1915,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/floor-and-ceil-in-sorted-array',
             'https://www.youtube.com/watch?v=6zhGS79oQ4k&list=PLgUwDviBIf0pMFMWuuvDNMAkoQFi-h0ZF&index=3',
+            NULL,
             NULL,
             NULL,
             5
@@ -1796,6 +1930,7 @@ VALUES
             'https://youtu.be/hjR1IYVx9lY',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/last-occurrence-in-a-sorted-array',
             'https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/',
+            NULL,
             6
         ),
 (
@@ -1808,6 +1943,7 @@ VALUES
             'https://www.youtube.com/watch?v=r3pMQ8-Ad5s&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=64',
             NULL,
             'https://leetcode.com/problems/search-in-rotated-sorted-array/',
+            NULL,
             7
         ),
 (
@@ -1820,6 +1956,7 @@ VALUES
             'https://youtu.be/w2G2W8l__pc',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/search-in-rotated-sorted-array-ii',
             'https://leetcode.com/problems/search-in-rotated-sorted-array-ii/',
+            NULL,
             8
         ),
 (
@@ -1832,6 +1969,7 @@ VALUES
             'https://youtu.be/nhEMDKMB44g',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/find-minimum-in-rotated-sorted-array',
             'https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/',
+            NULL,
             9
         ),
 (
@@ -1843,6 +1981,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/find-out-how-many-times-the-array-is-rotated',
             'https://youtu.be/jtSiWTPLwd0',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/rotation-count-sorted-array',
+            NULL,
             NULL,
             10
         ),
@@ -1856,6 +1995,7 @@ VALUES
             'https://youtu.be/AZOmHuHadxQ',
             NULL,
             'https://leetcode.com/problems/single-element-in-a-sorted-array/',
+            NULL,
             11
         ),
 (
@@ -1867,6 +2007,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/count-occurrences-in-a-sorted-array',
             'https://youtu.be/hjR1IYVx9lY',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/count-occurrences-in-a-sorted-array',
+            NULL,
             NULL,
             12
         ),
@@ -1880,6 +2021,7 @@ VALUES
             'https://youtu.be/Bsv3FPUX_BA',
             NULL,
             'https://leetcode.com/problems/sqrtx/',
+            NULL,
             13
         ),
 (
@@ -1890,6 +2032,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/find-nth-root-of-a-number',
             'https://www.youtube.com/watch?v=WjpswYrS2nY&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=62',
+            NULL,
             NULL,
             NULL,
             14
@@ -1904,6 +2047,7 @@ VALUES
             'https://youtu.be/UvBKTVaG6U8',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/find-the-smallest-divisor-given-a-threshold',
             'https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/',
+            NULL,
             15
         ),
 (
@@ -1916,6 +2060,7 @@ VALUES
             'https://youtu.be/qyfekrNni90',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/koko-eating-bananas',
             'https://leetcode.com/problems/koko-eating-bananas/',
+            NULL,
             16
         ),
 (
@@ -1928,6 +2073,7 @@ VALUES
             'https://youtu.be/TXAuxeYBTdg',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/minimum-days-to-make-m-bouquets',
             'https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/',
+            NULL,
             17
         ),
 (
@@ -1940,6 +2086,7 @@ VALUES
             'https://youtu.be/MG-Ac4TAvTY',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/capacity-to-ship-packages-within-d-days',
             'https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/',
+            NULL,
             18
         ),
 (
@@ -1952,6 +2099,7 @@ VALUES
             'https://youtu.be/uZ0N_hZpyps',
             NULL,
             'https://leetcode.com/problems/kth-missing-positive-number/',
+            NULL,
             19
         ),
 (
@@ -1964,6 +2112,7 @@ VALUES
             'https://www.youtube.com/watch?v=thUd_WJn6wk&list=PLgUwDviBIf0pMFMWuuvDNMAkoQFi-h0ZF&index=20',
             NULL,
             'https://leetcode.com/problems/split-array-largest-sum/',
+            NULL,
             20
         ),
 (
@@ -1975,6 +2124,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/aggressive-cows',
             'https://youtu.be/R_Mfw4ew-Vo',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/aggressive-cows',
+            NULL,
             NULL,
             21
         ),
@@ -1988,6 +2138,7 @@ VALUES
             'https://www.youtube.com/watch?v=gYmWHvRHu-s&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=69',
             NULL,
             'https://leetcode.com/problems/split-array-largest-sum/',
+            NULL,
             22
         ),
 (
@@ -2000,6 +2151,7 @@ VALUES
             'https://youtu.be/cXxmbemS6XM',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/find-a-peak-element-in-an-array',
             'https://leetcode.com/problems/find-peak-element/',
+            NULL,
             23
         ),
 (
@@ -2012,6 +2164,7 @@ VALUES
             'https://www.youtube.com/watch?v=NTop3VTjmxk&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=65',
             NULL,
             'https://leetcode.com/problems/median-of-two-sorted-arrays/',
+            NULL,
             24
         ),
 (
@@ -2022,6 +2175,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/kth-element-of-2-sorted-arrays',
             'https://www.youtube.com/watch?v=nv7F4PiLUzo&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=66',
+            NULL,
             NULL,
             NULL,
             25
@@ -2036,6 +2190,7 @@ VALUES
             'https://www.youtube.com/watch?v=kMSBvlZ-_HA&list=PLgUwDviBIf0pMFMWuuvDNMAkoQFi-h0ZF&index=21',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/minimize-maximum-distance-between-gas-stations',
             'https://leetcode.com/problems/minimize-max-distance-to-gas-station/',
+            NULL,
             26
         ),
 (
@@ -2048,6 +2203,7 @@ VALUES
             'https://www.youtube.com/watch?v=thUd_WJn6wk&list=PLgUwDviBIf0pMFMWuuvDNMAkoQFi-h0ZF&index=20',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/split-array-largest-sum',
             'https://leetcode.com/problems/split-array-largest-sum/',
+            NULL,
             27
         ),
 (
@@ -2059,6 +2215,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/find-row-with-maximum-1''s',
             'https://youtu.be/SCz-1TtYxDI',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/find-the-row-with-maximum-1s-in-a-sorted-binary-matrix',
+            NULL,
             NULL,
             28
         ),
@@ -2072,6 +2229,7 @@ VALUES
             'https://youtu.be/ZYpYur0znng',
             NULL,
             'https://leetcode.com/problems/search-a-2d-matrix/',
+            NULL,
             29
         ),
 (
@@ -2084,6 +2242,7 @@ VALUES
             'https://youtu.be/9ZbB397jU4k',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/search-in-a-row-and-column-wise-sorted-matrix',
             'https://leetcode.com/problems/search-a-2d-matrix-ii/',
+            NULL,
             30
         ),
 (
@@ -2096,6 +2255,7 @@ VALUES
             'https://youtu.be/nGGp5XBzC4g?si=WCop5C6Azj5gAELH',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/find-peak-element-2d-matrix',
             'https://leetcode.com/problems/find-a-peak-element-ii/',
+            NULL,
             31
         ),
 (
@@ -2108,6 +2268,7 @@ VALUES
             'https://youtu.be/Q9wXgdxJq48?si=ScI_0uzJh7yg8nrX',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/median-of-a-row-wise-sorted-matrix',
             'https://leetcode.com/problems/median-of-a-row-wise-sorted-matrix/',
+            NULL,
             32
         ),
 (
@@ -2120,6 +2281,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/remove-outermost-parentheses/',
+            NULL,
             1
         ),
 (
@@ -2132,6 +2294,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/',
+            NULL,
             2
         ),
 (
@@ -2144,6 +2307,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/roman-to-integer/',
+            NULL,
             3
         ),
 (
@@ -2156,6 +2320,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/string-to-integer-atoi/',
+            NULL,
             4
         ),
 (
@@ -2164,6 +2329,7 @@ VALUES
             'Substring Problems',
             'Count Number of Substrings',
             'Easy',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -2180,6 +2346,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/longest-palindromic-substring/',
+            NULL,
             6
         ),
 (
@@ -2192,6 +2359,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/sum-of-beauty-of-all-substrings/',
+            NULL,
             7
         ),
 (
@@ -2204,6 +2372,7 @@ VALUES
             'https://youtu.be/l0YC3876qxg',
             NULL,
             'https://leetcode.com/problems/powx-n/',
+            NULL,
             1
         ),
 (
@@ -2216,6 +2385,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/generate-parentheses/',
+            NULL,
             2
         ),
 (
@@ -2228,6 +2398,7 @@ VALUES
             'https://www.youtube.com/watch?v=b7AYbpM5YrE&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=67',
             NULL,
             'https://leetcode.com/problems/subsets/',
+            NULL,
             3
         ),
 (
@@ -2240,6 +2411,7 @@ VALUES
             NULL,
             'https://takeuforward.org/blogs/data-structure-and-algorithm/count-good-numbers',
             'https://leetcode.com/problems/count-good-numbers/',
+            NULL,
             4
         ),
 (
@@ -2249,6 +2421,7 @@ VALUES
             'Reverse a Stack',
             'Easy',
             'https://takeuforward.org/practice/dsa/reverse-a-stack',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -2264,6 +2437,7 @@ VALUES
             'https://www.youtube.com/watch?v=eQCS_v3bw0Q&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=7',
             NULL,
             NULL,
+            NULL,
             6
         ),
 (
@@ -2273,6 +2447,7 @@ VALUES
             'Check if there exists a subsequence with sum K',
             'Easy',
             'https://takeuforward.org/practice/dsa/check-if-there-exists-a-subsequence-with-sum-k',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -2288,6 +2463,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            NULL,
             8
         ),
 (
@@ -2297,6 +2473,7 @@ VALUES
             'Generate Binary Strings Without Consecutive 1s',
             'Easy',
             'https://takeuforward.org/practice/dsa/generate-binary-strings-without-consecutive-1s',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -2312,6 +2489,7 @@ VALUES
             'https://www.youtube.com/watch?v=OyZFFqQtu98&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=49',
             NULL,
             'https://leetcode.com/problems/combination-sum/',
+            NULL,
             10
         ),
 (
@@ -2324,6 +2502,7 @@ VALUES
             'https://www.youtube.com/watch?v=G1fRTGRxXU8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=50',
             NULL,
             'https://leetcode.com/problems/combination-sum-ii/',
+            NULL,
             11
         ),
 (
@@ -2336,6 +2515,7 @@ VALUES
             'https://www.youtube.com/watch?v=rYkfBRtMJr8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=52',
             NULL,
             'https://leetcode.com/problems/subsets/',
+            NULL,
             12
         ),
 (
@@ -2348,6 +2528,7 @@ VALUES
             'https://www.youtube.com/watch?v=RIn3gOkbhQE&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=53',
             NULL,
             'https://leetcode.com/problems/subsets-ii/',
+            NULL,
             13
         ),
 (
@@ -2360,6 +2541,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/combination-sum-iii/',
+            NULL,
             14
         ),
 (
@@ -2372,6 +2554,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/letter-combinations-of-a-phone-number/',
+            NULL,
             15
         ),
 (
@@ -2384,6 +2567,7 @@ VALUES
             'https://youtu.be/_H8V5hJUGd0',
             NULL,
             'https://leetcode.com/problems/palindrome-partitioning/',
+            NULL,
             16
         ),
 (
@@ -2396,6 +2580,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/word-search/',
+            NULL,
             17
         ),
 (
@@ -2408,6 +2593,7 @@ VALUES
             'https://www.youtube.com/watch?v=i05Ju7AftcM&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=57',
             NULL,
             'https://leetcode.com/problems/n-queens/',
+            NULL,
             18
         ),
 (
@@ -2418,6 +2604,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/rat-in-a-maze',
             'https://www.youtube.com/watch?v=bLGZhJlt4y0&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=60',
+            NULL,
             NULL,
             NULL,
             19
@@ -2432,6 +2619,7 @@ VALUES
             'https://www.youtube.com/watch?v=wuVwUK25Rfc&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=59',
             NULL,
             NULL,
+            NULL,
             20
         ),
 (
@@ -2444,6 +2632,7 @@ VALUES
             'https://www.youtube.com/watch?v=FWAIf_EVUKE&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=58',
             NULL,
             'https://leetcode.com/problems/sudoku-solver/',
+            NULL,
             21
         ),
 (
@@ -2456,6 +2645,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/expression-add-operators/',
+            NULL,
             22
         ),
 (
@@ -2467,6 +2657,7 @@ VALUES
             NULL,
             'https://youtu.be/Nq7ok-OyEpg?si=9PR1o8OPRWil7fRA',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/singly-linked-list',
+            NULL,
             NULL,
             1
         ),
@@ -2480,6 +2671,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            NULL,
             2
         ),
 (
@@ -2488,6 +2680,7 @@ VALUES
             'Fundamentals (Single LL)',
             'Deletion in Linked List',
             'Easy',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -2504,6 +2697,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            NULL,
             4
         ),
 (
@@ -2516,6 +2710,7 @@ VALUES
             'https://youtu.be/VaECK03Dz-g?si=CRaBHbOo2bHFbOT5',
             NULL,
             'https://leetcode.com/problems/delete-node-in-a-linked-list/',
+            NULL,
             5
         ),
 (
@@ -2525,6 +2720,7 @@ VALUES
             'Deletion of the tail of Linked List',
             'Easy',
             'https://takeuforward.org/practice/dsa/deletion-of-the-tail-of-ll',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -2540,6 +2736,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            NULL,
             7
         ),
 (
@@ -2549,6 +2746,7 @@ VALUES
             'Delete the element with value X',
             'Easy',
             'https://takeuforward.org/practice/dsa/delete-the-element-with-value-x',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -2564,6 +2762,7 @@ VALUES
             'https://youtu.be/VaECK03Dz-g?si=vHSwdf9jhE05adKM&t=1934',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/insert-a-node-at-the-beginning-of-a-singly-linked-list',
             NULL,
+            NULL,
             9
         ),
 (
@@ -2573,6 +2772,7 @@ VALUES
             'Insertion at the tail of Linked List',
             'Easy',
             'https://takeuforward.org/practice/dsa/insertion-at-the-tail-of-ll',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -2588,6 +2788,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            NULL,
             11
         ),
 (
@@ -2597,6 +2798,7 @@ VALUES
             'Insertion before the value X in Linked List',
             'Easy',
             'https://takeuforward.org/practice/dsa/insertion-before-the-value-x-in-ll',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -2612,6 +2814,7 @@ VALUES
             'https://youtu.be/Nq7ok-OyEpg?si=xqQbukLfo2oZ6C6s&t=2240',
             NULL,
             NULL,
+            NULL,
             13
         ),
 (
@@ -2622,6 +2825,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/search-in-linked-list',
             'https://youtu.be/Nq7ok-OyEpg?si=WNXcIaXZ_B6cNq0s&t=2524',
+            NULL,
             NULL,
             NULL,
             14
@@ -2636,6 +2840,7 @@ VALUES
             'https://youtu.be/0eKMU10uEDI?si=uDnoj_C5ghEpNLvP',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/doubly-linked-list',
             NULL,
+            NULL,
             15
         ),
 (
@@ -2644,6 +2849,7 @@ VALUES
             'Fundamentals (Doubly LL)',
             'Deletion in Doubly LL',
             'Easy',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -2660,6 +2866,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            NULL,
             17
         ),
 (
@@ -2669,6 +2876,7 @@ VALUES
             'Convert Array to Doubly Linked List',
             'Easy',
             'https://takeuforward.org/practice/dsa/convert-array-to-dll',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -2684,6 +2892,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            NULL,
             19
         ),
 (
@@ -2693,6 +2902,7 @@ VALUES
             'Delete Kth Element of Doubly Linked List',
             'Easy',
             'https://takeuforward.org/practice/dsa/delete-kth-element-of-dll',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -2708,6 +2918,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            NULL,
             21
         ),
 (
@@ -2720,6 +2931,7 @@ VALUES
             'https://youtu.be/0eKMU10uEDI?si=J5a0pQTosimcO_aA&t=2684',
             NULL,
             NULL,
+            NULL,
             22
         ),
 (
@@ -2729,6 +2941,7 @@ VALUES
             'Insert node before tail in Doubly Linked List',
             'Easy',
             'https://takeuforward.org/practice/dsa/insert-node-before-tail-in-dll',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -2744,6 +2957,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            NULL,
             24
         ),
 (
@@ -2753,6 +2967,7 @@ VALUES
             'Insert before given node in Doubly Linked List',
             'Easy',
             'https://takeuforward.org/practice/dsa/insert-before-given-node-in-dll',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -2768,6 +2983,7 @@ VALUES
             'https://youtu.be/0eKMU10uEDI?si=sE7jqrW46lfRHVLd&t=853',
             NULL,
             NULL,
+            NULL,
             26
         ),
 (
@@ -2780,6 +2996,7 @@ VALUES
             'https://youtu.be/u3WUW2qe6ww?si=96Wwlju72IvmzkxE',
             NULL,
             'https://leetcode.com/problems/reverse-linked-list/',
+            NULL,
             27
         ),
 (
@@ -2792,6 +3009,7 @@ VALUES
             'https://www.youtube.com/watch?v=LBVsXSMOIk4&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=32',
             NULL,
             'https://leetcode.com/problems/add-two-numbers/',
+            NULL,
             28
         ),
 (
@@ -2804,6 +3022,7 @@ VALUES
             'https://youtu.be/qf6qp7GzD5Q?si=JozAyXUdT8EJMSCQ',
             NULL,
             'https://leetcode.com/problems/odd-even-linked-list/',
+            NULL,
             29
         ),
 (
@@ -2815,6 +3034,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/sort-a-ll-of-0''s-1''s-and-2''s',
             'https://youtu.be/gRII7LhdJWc?si=l3qRC7w3NhY7OAqw',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/sort-linked-list-0s-1s-2s-changing-links',
+            NULL,
             NULL,
             30
         ),
@@ -2828,6 +3048,7 @@ VALUES
             'https://youtu.be/3kMKYQ2wNIU?si=DtFDnPU7z9HMz_GM',
             NULL,
             'https://leetcode.com/problems/remove-nth-node-from-end-of-list/',
+            NULL,
             31
         ),
 (
@@ -2840,6 +3061,7 @@ VALUES
             'https://youtu.be/D2vI2DNJGd8?si=RCaLSx01qR21IBdh',
             NULL,
             'https://leetcode.com/problems/reverse-linked-list/',
+            NULL,
             32
         ),
 (
@@ -2852,6 +3074,7 @@ VALUES
             'https://youtu.be/aXQWhbvT3w0?si=uRgU9S4r5cVmnUy7',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/add-one-to-number-linked-list',
             'https://leetcode.com/problems/plus-one-linked-list/',
+            NULL,
             33
         ),
 (
@@ -2864,6 +3087,7 @@ VALUES
             'https://youtu.be/7LjQ57RqgEc?si=ir_rRDio38rhamU_',
             NULL,
             'https://leetcode.com/problems/middle-of-the-linked-list/',
+            NULL,
             34
         ),
 (
@@ -2876,6 +3100,7 @@ VALUES
             'https://youtu.be/ePpV-_pfOeI?si=Au9GsZkVO57j6SiN',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/delete-the-middle-node-of-a-linked-list',
             'https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/',
+            NULL,
             35
         ),
 (
@@ -2888,6 +3113,7 @@ VALUES
             'https://youtu.be/lRY_G-u_8jk?si=BpM8hRYvXSYyjl-G',
             NULL,
             'https://leetcode.com/problems/palindrome-linked-list/',
+            NULL,
             36
         ),
 (
@@ -2900,6 +3126,7 @@ VALUES
             'https://youtu.be/0DYoPz2Tpt4?si=L-uJs5yXUxj4VJM2',
             NULL,
             'https://leetcode.com/problems/intersection-of-two-linked-lists/',
+            NULL,
             37
         ),
 (
@@ -2912,6 +3139,7 @@ VALUES
             'https://youtu.be/wiOo4DC5GGA?si=zagt6O6tFXc4_3cx',
             NULL,
             'https://leetcode.com/problems/linked-list-cycle/',
+            NULL,
             38
         ),
 (
@@ -2924,6 +3152,7 @@ VALUES
             'https://youtu.be/2Kd0KKmmHFc?si=7UreDPRjRvapeVB0',
             NULL,
             'https://leetcode.com/problems/linked-list-cycle-ii/',
+            NULL,
             39
         ),
 (
@@ -2935,6 +3164,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/length-of-loop-in-ll',
             'https://youtu.be/I4g1qbkTPus?si=ONktpqewvx57T8pF',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/length-of-cycle-linked-list',
+            NULL,
             NULL,
             40
         ),
@@ -2948,6 +3178,7 @@ VALUES
             'https://youtu.be/lIar1skcQYI?si=_jFghHKX4eaK36a1',
             NULL,
             'https://leetcode.com/problems/reverse-nodes-in-k-group/',
+            NULL,
             41
         ),
 (
@@ -2960,6 +3191,7 @@ VALUES
             'https://youtu.be/uT7YI7XbTY8?si=ZaChW3a68c_v54Is',
             NULL,
             'https://leetcode.com/problems/rotate-list/',
+            NULL,
             42
         ),
 (
@@ -2972,6 +3204,7 @@ VALUES
             'https://www.youtube.com/watch?v=Xb4slcp1U38&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=29',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/merge-two-sorted-linked-lists',
             'https://leetcode.com/problems/merge-two-sorted-lists/',
+            NULL,
             43
         ),
 (
@@ -2984,6 +3217,7 @@ VALUES
             'https://youtu.be/ykelywHJWLg?si=InMg9MmTHzY22NSR',
             NULL,
             'https://leetcode.com/problems/merge-k-sorted-lists/',
+            NULL,
             44
         ),
 (
@@ -2996,6 +3230,7 @@ VALUES
             'https://youtu.be/8ocB7a_c-Cc?si=Gv-Y8q8-WyARoV35',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/sort-a-linked-list-using-merge-sort',
             'https://leetcode.com/problems/sort-list/',
+            NULL,
             45
         ),
 (
@@ -3008,6 +3243,7 @@ VALUES
             'https://youtu.be/q570bKdrnlw?si=epZtpWvtNwuTf23o',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/clone-linked-list-random-pointer',
             'https://leetcode.com/problems/copy-list-with-random-pointer/',
+            NULL,
             46
         ),
 (
@@ -3019,6 +3255,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/delete-all-occurrences-of-a-key-in-dll',
             'https://youtu.be/Mh0NH_SD92k?si=tCYshBRi1upMqSVz',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/delete-all-occurrences-of-a-key-in-a-doubly-linked-list',
+            NULL,
             NULL,
             47
         ),
@@ -3032,6 +3269,7 @@ VALUES
             'https://youtu.be/YJKVTnOJXSY?si=AsZoNUoewetsBjr0',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/remove-duplicates-from-a-sorted-doubly-linked-list',
             NULL,
+            NULL,
             48
         ),
 (
@@ -3042,6 +3280,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/find-pairs-with-given-sum-in-doubly-linked-list',
             'https://youtu.be/YitR4dQsddE?si=iZAC259hdngV_OxC',
+            NULL,
             NULL,
             NULL,
             49
@@ -3056,6 +3295,7 @@ VALUES
             'https://youtu.be/qQd-ViW7bfk?si=QtdNaRhHmZb08Mr8',
             NULL,
             NULL,
+            NULL,
             1
         ),
 (
@@ -3066,6 +3306,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/check-if-the-i-th-bit-is-set-or-not',
             'https://youtu.be/nttpF8kwgd4?si=x9o8PsYaA2XVZ9rV',
+            NULL,
             NULL,
             NULL,
             2
@@ -3080,6 +3321,7 @@ VALUES
             'https://youtu.be/nttpF8kwgd4?si=x9o8PsYaA2XVZ9rV',
             NULL,
             NULL,
+            NULL,
             3
         ),
 (
@@ -3092,6 +3334,7 @@ VALUES
             'https://youtu.be/nttpF8kwgd4?si=x9o8PsYaA2XVZ9rV',
             NULL,
             'https://leetcode.com/problems/power-of-two/',
+            NULL,
             4
         ),
 (
@@ -3104,6 +3347,7 @@ VALUES
             'https://youtu.be/nttpF8kwgd4?si=x9o8PsYaA2XVZ9rV',
             NULL,
             'https://leetcode.com/problems/number-of-1-bits/',
+            NULL,
             5
         ),
 (
@@ -3114,6 +3358,7 @@ VALUES
             'Easy',
             NULL,
             'https://youtu.be/nttpF8kwgd4?si=x9o8PsYaA2XVZ9rV',
+            NULL,
             NULL,
             NULL,
             6
@@ -3128,6 +3373,7 @@ VALUES
             'https://youtu.be/nttpF8kwgd4?si=x9o8PsYaA2XVZ9rV',
             NULL,
             NULL,
+            NULL,
             7
         ),
 (
@@ -3140,6 +3386,7 @@ VALUES
             'https://youtu.be/OOdrmcfZXd8?si=rnkRVz1UiVBKWC69',
             NULL,
             'https://leetcode.com/problems/minimum-bit-flips-to-convert-number/',
+            NULL,
             8
         ),
 (
@@ -3152,6 +3399,7 @@ VALUES
             'https://youtu.be/bYWLJb3vCWY?t=1369',
             NULL,
             'https://leetcode.com/problems/single-number/',
+            NULL,
             9
         ),
 (
@@ -3164,6 +3412,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/single-number-ii/',
+            NULL,
             10
         ),
 (
@@ -3176,6 +3425,7 @@ VALUES
             'https://youtu.be/UA5JnV1J2sI?si=VFBRJyb3boZvx_r1',
             NULL,
             'https://leetcode.com/problems/single-number-iii/',
+            NULL,
             11
         ),
 (
@@ -3188,6 +3438,7 @@ VALUES
             'https://youtu.be/pBD4B1tzgVc?si=G9c5pEE-RrzeU6sz',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/divide-two-integers-without-multiplication-division-modulo',
             'https://leetcode.com/problems/divide-two-integers/',
+            NULL,
             12
         ),
 (
@@ -3200,6 +3451,7 @@ VALUES
             'https://youtu.be/LqKaUv1G3_I?si=UXU_T5OsHiokPRvP',
             NULL,
             'https://leetcode.com/problems/subsets/',
+            NULL,
             13
         ),
 (
@@ -3211,6 +3463,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/xor-of-numbers-in-a-given-range',
             'https://youtu.be/WqGb7159h7Q?si=uGUEbNUUaIN_6Vvr',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/xor-of-numbers-in-a-range-l-to-r',
+            NULL,
             NULL,
             14
         ),
@@ -3224,6 +3477,7 @@ VALUES
             'https://youtu.be/DIX2p7vb9co?si=GofAIDimue-Av0Fi',
             NULL,
             'https://leetcode.com/problems/assign-cookies/',
+            NULL,
             1
         ),
 (
@@ -3236,6 +3490,7 @@ VALUES
             'https://youtu.be/n_tmibEhO6Q?si=q1NW8MfPy0QU6fIl',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/lemonade-change',
             'https://leetcode.com/problems/lemonade-change/',
+            NULL,
             2
         ),
 (
@@ -3246,6 +3501,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/fractional-knapsack',
             'https://youtu.be/1ibsQrnuEEg?si=8R2By3wpHo0zZVHE',
+            NULL,
             NULL,
             NULL,
             3
@@ -3260,6 +3516,7 @@ VALUES
             'https://youtu.be/tZAa_jJ3SwQ?si=voKd7n9VTLDRRNzJ',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/jump-game',
             'https://leetcode.com/problems/jump-game/',
+            NULL,
             4
         ),
 (
@@ -3270,6 +3527,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/shortest-job-first',
             'https://youtu.be/3-QbX1iDbXs?si=IH8QZUblr01F7UoQ',
+            NULL,
             NULL,
             NULL,
             5
@@ -3284,6 +3542,7 @@ VALUES
             'https://youtu.be/QbwltemZbRg?si=wvcemJ5BLPlTRmkG',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/job-sequencing-problem',
             NULL,
+            NULL,
             6
         ),
 (
@@ -3295,6 +3554,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/n-meetings-in-one-room',
             'https://youtu.be/mKfhTotEguk?si=2RELeq18mpmIIN3Q',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/n-meetings-in-one-room',
+            NULL,
             NULL,
             7
         ),
@@ -3308,6 +3568,7 @@ VALUES
             'https://youtu.be/HDHQ8lAWakY?si=JVtLqboGdpUTOVjf',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/non-overlapping-intervals',
             'https://leetcode.com/problems/non-overlapping-intervals/',
+            NULL,
             8
         ),
 (
@@ -3320,6 +3581,7 @@ VALUES
             'https://youtu.be/xxRE-46OCC8?si=a7aPuIw16zDx2lAa',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/insert-interval',
             'https://leetcode.com/problems/insert-interval/',
+            NULL,
             9
         ),
 (
@@ -3332,6 +3594,7 @@ VALUES
             'https://www.youtube.com/watch?v=2JzRBPFYbKE&list=PLgUwDviBIf0rPG3Ictpu74YWBQ1CaBkm2&index=6',
             NULL,
             'https://leetcode.com/problems/merge-intervals/',
+            NULL,
             10
         ),
 (
@@ -3344,6 +3607,7 @@ VALUES
             'https://youtu.be/AsGzwR_FWok?si=165acXU_dtqOHuo9',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/minimum-platforms-required-for-a-railway-station',
             'https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/',
+            NULL,
             11
         ),
 (
@@ -3356,6 +3620,7 @@ VALUES
             'https://youtu.be/cHT6sG_hUZI?si=XRHeyh7jOaLaTy3g',
             NULL,
             'https://leetcode.com/problems/valid-parenthesis-string/',
+            NULL,
             12
         ),
 (
@@ -3368,6 +3633,7 @@ VALUES
             'https://youtu.be/IIqVFvKE6RY?si=EjmuXZJNLQLUkEd7',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/candy-distribution-problem',
             'https://leetcode.com/problems/candy/',
+            NULL,
             13
         ),
 (
@@ -3380,6 +3646,7 @@ VALUES
             'https://youtu.be/7SBVnw7GSTk?si=9uUouBELh9K3m2jZ',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/jump-game-ii-minimum-jumps',
             'https://leetcode.com/problems/jump-game-ii/',
+            NULL,
             14
         ),
 (
@@ -3388,6 +3655,7 @@ VALUES
             'Pattern and Template',
             'Theory',
             'Easy',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -3404,6 +3672,7 @@ VALUES
             'https://youtu.be/pBWCOCS636U?si=-X64rY67noxvOwrG',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/maximum-points-you-can-obtain-from-cards',
             'https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/',
+            NULL,
             2
         ),
 (
@@ -3416,6 +3685,7 @@ VALUES
             'https://youtu.be/-zSxTJkcdAo?si=I2zfR-vlDMg0zU9z',
             NULL,
             'https://leetcode.com/problems/longest-substring-without-repeating-characters/',
+            NULL,
             3
         ),
 (
@@ -3428,6 +3698,7 @@ VALUES
             'https://youtu.be/3E4JBHSLpYk?si=SoOW64pP6otEKxBw',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/max-consecutive-ones-iii',
             'https://leetcode.com/problems/max-consecutive-ones-iii/',
+            NULL,
             4
         ),
 (
@@ -3440,6 +3711,7 @@ VALUES
             'https://youtu.be/e3bs0uA1NhQ?si=gR8pO62u-nJeFAXk',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/fruit-into-baskets',
             'https://leetcode.com/problems/fruit-into-baskets/',
+            NULL,
             5
         ),
 (
@@ -3452,6 +3724,7 @@ VALUES
             'https://youtu.be/teM9ZsVRQyc?si=Kh0_u6aCkkBU3Q33',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/longest-substring-with-at-most-k-distinct-characters',
             'https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/',
+            NULL,
             6
         ),
 (
@@ -3464,6 +3737,7 @@ VALUES
             'https://youtu.be/_eNhaDCr6P0?si=pBWcEjozF5poom0p',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/longest-repeating-character-replacement',
             'https://leetcode.com/problems/longest-repeating-character-replacement/',
+            NULL,
             7
         ),
 (
@@ -3476,6 +3750,7 @@ VALUES
             'https://youtu.be/WJaij9ffOIY?si=-xnsWIH84zWU0ICd',
             NULL,
             'https://leetcode.com/problems/minimum-window-substring/',
+            NULL,
             8
         ),
 (
@@ -3488,6 +3763,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/minimum-window-subsequence/',
+            NULL,
             9
         ),
 (
@@ -3500,6 +3776,7 @@ VALUES
             'https://youtu.be/xtqN4qlgr8s?si=kuaLHVOLXhh5Z2tW',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/count-substrings-containing-all-three-characters-a-b-and-c',
             'https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/',
+            NULL,
             10
         ),
 (
@@ -3512,6 +3789,7 @@ VALUES
             'https://youtu.be/XnMdNUkX6VM?si=Nyt8EveeLUg8lmty',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/binary-subarrays-with-sum',
             'https://leetcode.com/problems/binary-subarrays-with-sum/',
+            NULL,
             11
         ),
 (
@@ -3524,6 +3802,7 @@ VALUES
             'https://youtu.be/j_QOv9OT9Og?si=Oq5-5hyFkzVSOZpP',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/count-nice-subarrays',
             'https://leetcode.com/problems/count-number-of-nice-subarrays/',
+            NULL,
             12
         ),
 (
@@ -3536,6 +3815,7 @@ VALUES
             'https://youtu.be/7wYGbV_LsX4?si=KWa48RgLDCvdNqRb',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/subarrays-with-k-different-integers',
             'https://leetcode.com/problems/subarrays-with-k-different-integers/',
+            NULL,
             13
         ),
 (
@@ -3544,6 +3824,7 @@ VALUES
             'Implementation ',
             'Implementation using different DS',
             'Easy',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -3560,6 +3841,7 @@ VALUES
             'https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/implement-a-stack-using-an-array',
             NULL,
+            NULL,
             2
         ),
 (
@@ -3571,6 +3853,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/implement-queue-using-arrays',
             'https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/implement-a-queue-using-an-array',
+            NULL,
             NULL,
             3
         ),
@@ -3584,6 +3867,7 @@ VALUES
             'https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w',
             NULL,
             'https://leetcode.com/problems/implement-stack-using-queues/',
+            NULL,
             4
         ),
 (
@@ -3596,6 +3880,7 @@ VALUES
             'https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/implement-a-queue-using-stacks',
             'https://leetcode.com/problems/implement-queue-using-stacks/',
+            NULL,
             5
         ),
 (
@@ -3608,6 +3893,7 @@ VALUES
             'https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/implement-a-stack-using-a-linked-list',
             NULL,
+            NULL,
             6
         ),
 (
@@ -3618,6 +3904,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/implement-queue-using-linkedlist',
             'https://youtu.be/tqQ5fTamIN4?si=ofLt8Zt1ZvhikZ6w',
+            NULL,
             NULL,
             NULL,
             7
@@ -3632,6 +3919,7 @@ VALUES
             'https://youtu.be/xwjS0iZhw4I?si=UoyKpFn4Q3nf5h2R',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/check-balanced-parentheses-using-a-stack',
             'https://leetcode.com/problems/valid-parentheses/',
+            NULL,
             8
         ),
 (
@@ -3642,6 +3930,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/infix-to-postfix-conversion',
             'https://youtu.be/4pIc9UBHJtk?si=ryeVvQWpCgwbTQrh',
+            NULL,
             NULL,
             NULL,
             9
@@ -3656,6 +3945,7 @@ VALUES
             'https://youtu.be/4pIc9UBHJtk?si=0pWtyDC1GhbiYP3P',
             NULL,
             NULL,
+            NULL,
             10
         ),
 (
@@ -3666,6 +3956,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/prefix-to-infix-conversion',
             'https://youtu.be/4pIc9UBHJtk?si=ryeVvQWpCgwbTQrh',
+            NULL,
             NULL,
             NULL,
             11
@@ -3680,6 +3971,7 @@ VALUES
             'https://youtu.be/4pIc9UBHJtk?si=0pWtyDC1GhbiYP3P',
             NULL,
             NULL,
+            NULL,
             12
         ),
 (
@@ -3690,6 +3982,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/postfix-to-infix-conversion',
             'https://youtu.be/4pIc9UBHJtk?si=0pWtyDC1GhbiYP3P',
+            NULL,
             NULL,
             NULL,
             13
@@ -3704,6 +3997,7 @@ VALUES
             'https://youtu.be/4pIc9UBHJtk?si=0pWtyDC1GhbiYP3P',
             NULL,
             NULL,
+            NULL,
             14
         ),
 (
@@ -3716,6 +4010,7 @@ VALUES
             'https://youtu.be/e7XQLtOQM3I?si=QdcHpTtx6gAHsext',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/next-greater-element',
             'https://leetcode.com/problems/next-greater-element-i/',
+            NULL,
             15
         ),
 (
@@ -3728,6 +4023,7 @@ VALUES
             'https://youtu.be/7PrncD7v9YQ?si=UkBc7eVy9HGlBpeW',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/next-greater-element-ii-circular-array',
             'https://leetcode.com/problems/next-greater-element-ii/',
+            NULL,
             16
         ),
 (
@@ -3740,6 +4036,7 @@ VALUES
             'https://youtu.be/_eYGqw_VDR4?si=YyxibcHq800RqgIQ',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/asteroid-collision',
             'https://leetcode.com/problems/asteroid-collision/',
+            NULL,
             17
         ),
 (
@@ -3752,6 +4049,7 @@ VALUES
             'https://youtu.be/v0e8p9JCgRc?si=XAU7ekECgS5nboRw',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/sum-of-subarray-minimums',
             'https://leetcode.com/problems/sum-of-subarray-minimums/',
+            NULL,
             18
         ),
 (
@@ -3764,6 +4062,7 @@ VALUES
             'https://youtu.be/gIrMptNPf5M?si=Q_GHuBvzZVs27X_U',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/sum-of-subarray-ranges',
             'https://leetcode.com/problems/sum-of-subarray-ranges/',
+            NULL,
             19
         ),
 (
@@ -3776,6 +4075,7 @@ VALUES
             'https://youtu.be/jmbuRzYPGrg?si=WN387gwQ7aXWkUao',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/remove-k-digits',
             'https://leetcode.com/problems/remove-k-digits/',
+            NULL,
             20
         ),
 (
@@ -3785,6 +4085,7 @@ VALUES
             'Next Smaller Element',
             'Easy',
             'https://takeuforward.org/practice/dsa/next-smaller-element',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -3800,6 +4101,7 @@ VALUES
             'https://youtu.be/NdDIaH91P0g?si=4_Jbsq5trFvfSdUY',
             NULL,
             'https://leetcode.com/problems/min-stack/',
+            NULL,
             22
         ),
 (
@@ -3812,6 +4114,7 @@ VALUES
             'https://youtu.be/NwBvene4Imo?si=eU1PY-bcQfk5wdog',
             NULL,
             'https://leetcode.com/problems/sliding-window-maximum/',
+            NULL,
             23
         ),
 (
@@ -3824,6 +4127,7 @@ VALUES
             'https://youtu.be/1_5VuquLbXg?si=NFG6df318_6OtGvg',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/trapping-rain-water',
             'https://leetcode.com/problems/trapping-rain-water/',
+            NULL,
             24
         ),
 (
@@ -3836,6 +4140,7 @@ VALUES
             'https://youtu.be/Bzat9vgD0fs?si=DiBlLejXcr6EJoyB',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/largest-rectangle-in-histogram',
             'https://leetcode.com/problems/largest-rectangle-in-histogram/',
+            NULL,
             25
         ),
 (
@@ -3848,6 +4153,7 @@ VALUES
             'https://youtu.be/tOylVCugy9k',
             NULL,
             'https://leetcode.com/problems/maximal-rectangle/',
+            NULL,
             26
         ),
 (
@@ -3860,6 +4166,7 @@ VALUES
             'https://youtu.be/eay-zoSRkVc?si=deNNe5i38BOAntha',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/stock-span-problem',
             'https://leetcode.com/problems/online-stock-span/',
+            NULL,
             27
         ),
 (
@@ -3872,6 +4179,7 @@ VALUES
             'https://youtu.be/cEadsbTeze4?si=olXYfOs7l-SEn2zl',
             NULL,
             'https://leetcode.com/problems/find-the-celebrity/',
+            NULL,
             28
         ),
 (
@@ -3884,6 +4192,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/lru-cache/',
+            NULL,
             29
         ),
 (
@@ -3896,6 +4205,7 @@ VALUES
             'https://www.youtube.com/watch?v=0PSB9y8ehbk&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=79',
             NULL,
             'https://leetcode.com/problems/lfu-cache/',
+            NULL,
             30
         ),
 (
@@ -3905,6 +4215,7 @@ VALUES
             'Number of Greater Elements to the Right',
             'Easy',
             'https://takeuforward.org/practice/dsa/number-of-greater-elements-to-the-right',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -3920,6 +4231,7 @@ VALUES
             'https://youtu.be/_ANrF3FJm7I',
             NULL,
             NULL,
+            NULL,
             1
         ),
 (
@@ -3932,6 +4244,7 @@ VALUES
             'https://youtu.be/lxTGsVXjwvM',
             NULL,
             'https://leetcode.com/problems/binary-tree-inorder-traversal/',
+            NULL,
             2
         ),
 (
@@ -3944,6 +4257,7 @@ VALUES
             'https://youtu.be/RlUu72JrOCQ',
             NULL,
             'https://leetcode.com/problems/binary-tree-preorder-traversal/',
+            NULL,
             3
         ),
 (
@@ -3956,6 +4270,7 @@ VALUES
             'https://youtu.be/2YBhNLodD8Q',
             NULL,
             'https://leetcode.com/problems/binary-tree-postorder-traversal/',
+            NULL,
             4
         ),
 (
@@ -3968,6 +4283,7 @@ VALUES
             'https://youtu.be/EoAsWbO7sqg',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/binary-tree-level-order-traversal',
             'https://leetcode.com/problems/binary-tree-level-order-traversal/',
+            NULL,
             5
         ),
 (
@@ -3978,6 +4294,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/pre,-post,-inorder-in-one-traversal',
             'https://youtu.be/ySp2epYvgTE',
+            NULL,
             NULL,
             NULL,
             6
@@ -3992,6 +4309,7 @@ VALUES
             'https://youtu.be/eD3tmO66aBA',
             NULL,
             'https://leetcode.com/problems/maximum-depth-of-binary-tree/',
+            NULL,
             7
         ),
 (
@@ -4004,6 +4322,7 @@ VALUES
             'https://youtu.be/BhuvF_-PWS0',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/check-identical-binary-trees',
             'https://leetcode.com/problems/same-tree/',
+            NULL,
             8
         ),
 (
@@ -4016,6 +4335,7 @@ VALUES
             'https://youtu.be/Yt50Jfbd8Po',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/check-if-a-binary-tree-is-height-balanced',
             'https://leetcode.com/problems/balanced-binary-tree/',
+            NULL,
             9
         ),
 (
@@ -4028,6 +4348,7 @@ VALUES
             'https://youtu.be/Rezetez59Nk',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/diameter-of-a-binary-tree',
             'https://leetcode.com/problems/diameter-of-binary-tree/',
+            NULL,
             10
         ),
 (
@@ -4040,6 +4361,7 @@ VALUES
             'https://youtu.be/WszrfSwMz58',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/binary-tree-maximum-path-sum',
             'https://leetcode.com/problems/binary-tree-maximum-path-sum/',
+            NULL,
             11
         ),
 (
@@ -4052,6 +4374,7 @@ VALUES
             'https://www.youtube.com/watch?v=nKggNAiEpBE',
             NULL,
             'https://leetcode.com/problems/symmetric-tree/',
+            NULL,
             12
         ),
 (
@@ -4062,6 +4385,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/children-sum-property-in-binary-tree',
             'https://youtu.be/fnmisPM6cVo',
+            NULL,
             NULL,
             NULL,
             13
@@ -4076,6 +4400,7 @@ VALUES
             'https://youtu.be/3OXWEdlIGl4',
             NULL,
             'https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/',
+            NULL,
             14
         ),
 (
@@ -4088,6 +4413,7 @@ VALUES
             'https://youtu.be/0ca1nvR0be4',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/boundary-traversal-of-a-binary-tree',
             'https://leetcode.com/problems/boundary-of-binary-tree/',
+            NULL,
             15
         ),
 (
@@ -4100,6 +4426,7 @@ VALUES
             'https://youtu.be/q_a6lpbKJdw',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/vertical-order-traversal-of-a-binary-tree',
             'https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/',
+            NULL,
             16
         ),
 (
@@ -4111,6 +4438,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/top-view-of-bt',
             'https://youtu.be/Et9OCDNvJ78',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/top-view-of-binary-tree',
+            NULL,
             NULL,
             17
         ),
@@ -4124,6 +4452,7 @@ VALUES
             'https://youtu.be/0FtVY6I4pB8',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/bottom-view-of-binary-tree',
             NULL,
+            NULL,
             18
         ),
 (
@@ -4136,6 +4465,7 @@ VALUES
             'https://youtu.be/KV4mRzTjlAk',
             NULL,
             'https://leetcode.com/problems/binary-tree-right-side-view/',
+            NULL,
             19
         ),
 (
@@ -4146,6 +4476,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/print-root-to-leaf-path-in-bt',
             'https://youtu.be/fmflMqVOC7k',
+            NULL,
             NULL,
             NULL,
             20
@@ -4160,6 +4491,7 @@ VALUES
             'https://youtu.be/_-QHfMDde90',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/lowest-common-ancestor-in-a-binary-tree',
             'https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/',
+            NULL,
             21
         ),
 (
@@ -4172,6 +4504,7 @@ VALUES
             'https://youtu.be/ZbybYvcVLks',
             NULL,
             'https://leetcode.com/problems/maximum-width-of-binary-tree/',
+            NULL,
             22
         ),
 (
@@ -4184,6 +4517,7 @@ VALUES
             'https://youtu.be/i9ORlEy6EsI',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/nodes-distance-k-binary-tree',
             'https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/',
+            NULL,
             23
         ),
 (
@@ -4195,6 +4529,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/minimum-time-taken-to-burn-the-bt-from-a-given-node',
             'https://youtu.be/2r5wLmQfD6g',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/minimum-time-burn-binary-tree',
+            NULL,
             NULL,
             24
         ),
@@ -4208,6 +4543,7 @@ VALUES
             'https://youtu.be/u-yWemKGWO0',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/count-nodes-in-a-complete-binary-tree',
             'https://leetcode.com/problems/count-complete-tree-nodes/',
+            NULL,
             25
         ),
 (
@@ -4220,6 +4556,7 @@ VALUES
             'https://youtu.be/sWf7k1x9XR4',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/flatten-binary-tree-to-linked-list',
             'https://leetcode.com/problems/flatten-binary-tree-to-linked-list/',
+            NULL,
             26
         ),
 (
@@ -4230,6 +4567,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/requirements-needed-to-construct-a-unique-bt',
             'https://youtu.be/9GMECGQgWrQ',
+            NULL,
             NULL,
             NULL,
             27
@@ -4244,6 +4582,7 @@ VALUES
             'https://youtu.be/aZNaLrVebKQ',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/construct-a-binary-tree-from-preorder-and-inorder',
             'https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/',
+            NULL,
             28
         ),
 (
@@ -4256,6 +4595,7 @@ VALUES
             'https://youtu.be/LgLRTaEMRVc',
             NULL,
             'https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/',
+            NULL,
             29
         ),
 (
@@ -4268,6 +4608,7 @@ VALUES
             'https://youtu.be/-YbXySKJsX8',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/serialize-and-deserialize-a-binary-tree',
             'https://leetcode.com/problems/serialize-and-deserialize-binary-tree/',
+            NULL,
             30
         ),
 (
@@ -4280,6 +4621,7 @@ VALUES
             'https://youtu.be/80Zug6D1_r4',
             NULL,
             'https://leetcode.com/problems/binary-tree-inorder-traversal/',
+            NULL,
             31
         ),
 (
@@ -4292,6 +4634,7 @@ VALUES
             'https://youtu.be/80Zug6D1_r4',
             NULL,
             'https://leetcode.com/problems/binary-tree-preorder-traversal/',
+            NULL,
             32
         ),
 (
@@ -4303,6 +4646,7 @@ VALUES
             NULL,
             'https://youtu.be/p7-9UvDQZ3w',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/binary-search-tree',
+            NULL,
             NULL,
             1
         ),
@@ -4316,6 +4660,7 @@ VALUES
             'https://youtu.be/KcNt6v_56cc',
             NULL,
             'https://leetcode.com/problems/search-in-a-binary-search-tree/',
+            NULL,
             2
         ),
 (
@@ -4328,6 +4673,7 @@ VALUES
             'https://www.youtube.com/watch?v=xm_W1ub-K-w&list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk&index=43',
             NULL,
             NULL,
+            NULL,
             3
         ),
 (
@@ -4336,6 +4682,7 @@ VALUES
             'Theory and Basics',
             'Find Min/Max in BST',
             'Easy',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -4352,6 +4699,7 @@ VALUES
             'https://youtu.be/FiFiNvM29ps',
             NULL,
             'https://leetcode.com/problems/insert-into-a-binary-search-tree/',
+            NULL,
             5
         ),
 (
@@ -4364,6 +4712,7 @@ VALUES
             'https://youtu.be/kouxiP_H5WE',
             NULL,
             'https://leetcode.com/problems/delete-node-in-a-bst/',
+            NULL,
             6
         ),
 (
@@ -4376,6 +4725,7 @@ VALUES
             'https://youtu.be/9TJYWh0adfk',
             NULL,
             'https://leetcode.com/problems/kth-smallest-element-in-a-bst/',
+            NULL,
             7
         ),
 (
@@ -4388,6 +4738,7 @@ VALUES
             'https://youtu.be/f-sj7I5oXEI',
             NULL,
             'https://leetcode.com/problems/validate-binary-search-tree/',
+            NULL,
             8
         ),
 (
@@ -4400,6 +4751,7 @@ VALUES
             'https://youtu.be/cX_kPV_foZc',
             NULL,
             'https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/',
+            NULL,
             9
         ),
 (
@@ -4412,6 +4764,7 @@ VALUES
             'https://youtu.be/UmJT3j26t1I',
             NULL,
             'https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/',
+            NULL,
             10
         ),
 (
@@ -4424,6 +4777,7 @@ VALUES
             'https://youtu.be/SXKAD2svfmI',
             NULL,
             'https://leetcode.com/problems/inorder-successor-in-bst/',
+            NULL,
             11
         ),
 (
@@ -4436,6 +4790,7 @@ VALUES
             'https://youtu.be/D2jMcmxU4bs',
             NULL,
             'https://leetcode.com/problems/binary-search-tree-iterator/',
+            NULL,
             12
         ),
 (
@@ -4448,6 +4803,7 @@ VALUES
             'https://youtu.be/ssL3sHwPeb4',
             NULL,
             'https://leetcode.com/problems/two-sum-iv-input-is-a-bst/',
+            NULL,
             13
         ),
 (
@@ -4460,6 +4816,7 @@ VALUES
             'https://youtu.be/ZWGW7FminDM',
             NULL,
             'https://leetcode.com/problems/recover-binary-search-tree/',
+            NULL,
             14
         ),
 (
@@ -4472,6 +4829,7 @@ VALUES
             'https://youtu.be/X0oXMdtUDwo',
             NULL,
             'https://leetcode.com/problems/largest-bst-subtree/',
+            NULL,
             15
         ),
 (
@@ -4480,6 +4838,7 @@ VALUES
             'Theory and Implementation',
             'Heaps (Theory Video)',
             'Easy',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -4496,6 +4855,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            NULL,
             2
         ),
 (
@@ -4505,6 +4865,7 @@ VALUES
             'Build heap from a given Array',
             'Easy',
             'https://takeuforward.org/practice/dsa/build-heap-from-a-given-array',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -4520,6 +4881,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            NULL,
             4
         ),
 (
@@ -4529,6 +4891,7 @@ VALUES
             'Implement Max Heap',
             'Easy',
             'https://takeuforward.org/practice/dsa/implement-max-heap',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -4544,6 +4907,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            NULL,
             6
         ),
 (
@@ -4553,6 +4917,7 @@ VALUES
             'Convert Min Heap to Max Heap',
             'Easy',
             'https://takeuforward.org/practice/dsa/convert-min-heap-to-max-heap',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -4568,6 +4933,7 @@ VALUES
             NULL,
             NULL,
             NULL,
+            NULL,
             8
         ),
 (
@@ -4580,6 +4946,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/kth-largest-element-in-an-array/',
+            NULL,
             9
         ),
 (
@@ -4592,6 +4959,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/kth-largest-element-in-a-stream/',
+            NULL,
             10
         ),
 (
@@ -4600,6 +4968,7 @@ VALUES
             'FAQs',
             'Sort K sorted array',
             'Easy',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -4616,6 +4985,7 @@ VALUES
             NULL,
             'https://takeuforward.org/blogs/data-structure-and-algorithm/merge-k-sorted-linked-lists',
             'https://leetcode.com/problems/merge-k-sorted-lists/',
+            NULL,
             12
         ),
 (
@@ -4628,6 +4998,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/rank-transform-of-an-array/',
+            NULL,
             13
         ),
 (
@@ -4640,6 +5011,7 @@ VALUES
             NULL,
             'https://takeuforward.org/blogs/data-structure-and-algorithm/task-scheduler',
             'https://leetcode.com/problems/task-scheduler/',
+            NULL,
             14
         ),
 (
@@ -4652,6 +5024,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/hand-of-straights/',
+            NULL,
             15
         ),
 (
@@ -4664,6 +5037,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/design-twitter/',
+            NULL,
             16
         ),
 (
@@ -4676,6 +5050,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/minimum-cost-to-connect-sticks/',
+            NULL,
             17
         ),
 (
@@ -4685,6 +5060,7 @@ VALUES
             'Maximum Sum Combination',
             'Easy',
             'https://takeuforward.org/practice/dsa/maximum-sum-combination',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -4700,6 +5076,7 @@ VALUES
             NULL,
             'https://takeuforward.org/blogs/data-structure-and-algorithm/find-median-data-stream',
             'https://leetcode.com/problems/find-median-from-data-stream/',
+            NULL,
             19
         ),
 (
@@ -4712,6 +5089,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/top-k-frequent-elements/',
+            NULL,
             20
         ),
 (
@@ -4722,6 +5100,7 @@ VALUES
             'Easy',
             NULL,
             'https://youtu.be/3oI-34aPMWM',
+            NULL,
             NULL,
             NULL,
             1
@@ -4736,6 +5115,7 @@ VALUES
             'https://youtu.be/Qzf1a--rhp8',
             NULL,
             NULL,
+            NULL,
             2
         ),
 (
@@ -4748,6 +5128,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/',
+            NULL,
             3
         ),
 (
@@ -4760,6 +5141,7 @@ VALUES
             'https://youtu.be/ACzkVtewUYA',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/number-of-provinces',
             'https://leetcode.com/problems/number-of-provinces/',
+            NULL,
             4
         ),
 (
@@ -4772,6 +5154,7 @@ VALUES
             'https://www.youtube.com/watch?v=muncqlKJrH0&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=8',
             NULL,
             'https://leetcode.com/problems/number-of-islands/',
+            NULL,
             5
         ),
 (
@@ -4784,6 +5167,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/flood-fill/',
+            NULL,
             6
         ),
 (
@@ -4796,6 +5180,7 @@ VALUES
             'https://youtu.be/rxKcepXQgU4',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/number-of-enclaves',
             'https://leetcode.com/problems/number-of-enclaves/',
+            NULL,
             7
         ),
 (
@@ -4808,6 +5193,7 @@ VALUES
             'https://www.youtube.com/watch?v=yf3oUhkvqA0',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/rotting-oranges',
             'https://leetcode.com/problems/rotting-oranges/',
+            NULL,
             8
         ),
 (
@@ -4820,6 +5206,7 @@ VALUES
             'https://youtu.be/edXdVwkYHF8',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/distance-of-the-nearest-cell-having-1-in-a-binary-matrix',
             'https://leetcode.com/problems/01-matrix/',
+            NULL,
             9
         ),
 (
@@ -4832,6 +5219,7 @@ VALUES
             'https://youtu.be/BtdgAys4yMk',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/surrounded-regions',
             'https://leetcode.com/problems/surrounded-regions/',
+            NULL,
             10
         ),
 (
@@ -4844,6 +5232,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/number-of-distinct-islands/',
+            NULL,
             11
         ),
 (
@@ -4856,6 +5245,7 @@ VALUES
             'https://youtu.be/zQ3zgFypzX4',
             NULL,
             'https://leetcode.com/problems/course-schedule/',
+            NULL,
             12
         ),
 (
@@ -4868,6 +5258,7 @@ VALUES
             'https://youtu.be/KG5YFfR0j8A',
             NULL,
             'https://leetcode.com/problems/is-graph-bipartite/',
+            NULL,
             13
         ),
 (
@@ -4878,6 +5269,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/topological-sort-or-kahns-algorithm',
             'https://youtu.be/5lZ0iJMrUMk',
+            NULL,
             NULL,
             NULL,
             14
@@ -4892,6 +5284,7 @@ VALUES
             'https://www.youtube.com/watch?v=uzVUw90ZFIg&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=12',
             NULL,
             'https://leetcode.com/problems/course-schedule/',
+            NULL,
             15
         ),
 (
@@ -4904,6 +5297,7 @@ VALUES
             'https://youtu.be/2gtg3VsDGyc',
             NULL,
             'https://leetcode.com/problems/find-eventual-safe-states/',
+            NULL,
             16
         ),
 (
@@ -4916,6 +5310,7 @@ VALUES
             'https://youtu.be/WAOfKpxYHR8',
             NULL,
             'https://leetcode.com/problems/course-schedule/',
+            NULL,
             17
         ),
 (
@@ -4928,6 +5323,7 @@ VALUES
             'https://youtu.be/WAOfKpxYHR8',
             NULL,
             'https://leetcode.com/problems/course-schedule-ii/',
+            NULL,
             18
         ),
 (
@@ -4940,6 +5336,7 @@ VALUES
             'https://youtu.be/U3N_je7tWAs',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/alien-dictionary',
             'https://leetcode.com/problems/alien-dictionary/',
+            NULL,
             19
         ),
 (
@@ -4951,6 +5348,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/shortest-path-in-dag',
             'https://www.youtube.com/watch?v=ZUFQfFaU-8U&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=27',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/shortest-path-in-a-directed-acyclic-graph-dag',
+            NULL,
             NULL,
             20
         ),
@@ -4964,6 +5362,7 @@ VALUES
             'https://www.youtube.com/watch?v=C4gxoTaI71U&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=28',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/shortest-path-in-an-unweighted-undirected-graph-using-bfs',
             NULL,
+            NULL,
             21
         ),
 (
@@ -4976,6 +5375,7 @@ VALUES
             'https://youtu.be/tRPda0rcf8E',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/word-ladder',
             'https://leetcode.com/problems/word-ladder/',
+            NULL,
             22
         ),
 (
@@ -4988,6 +5388,7 @@ VALUES
             'https://youtu.be/AD4SFl7tu7I?si=EpcJQTWm2YeURvEG',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/word-ladder-ii',
             'https://leetcode.com/problems/word-ladder-ii/',
+            NULL,
             23
         ),
 (
@@ -5000,6 +5401,7 @@ VALUES
             'https://www.youtube.com/watch?v=rp1SMw7HSO8&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=35',
             NULL,
             NULL,
+            NULL,
             24
         ),
 (
@@ -5009,6 +5411,7 @@ VALUES
             'Print Shortest Path ',
             'Easy',
             'https://takeuforward.org/practice/dsa/print-shortest-path-',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -5024,6 +5427,7 @@ VALUES
             'https://www.youtube.com/watch?v=U5Mw4eyUmw4&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=36',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/shortest-distance-binary-maze',
             'https://leetcode.com/problems/shortest-path-in-binary-matrix/',
+            NULL,
             26
         ),
 (
@@ -5036,6 +5440,7 @@ VALUES
             'https://youtu.be/0ytpZyiZFhA',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/path-with-minimum-effort',
             'https://leetcode.com/problems/path-with-minimum-effort/',
+            NULL,
             27
         ),
 (
@@ -5048,6 +5453,7 @@ VALUES
             'https://youtu.be/9XybHVqTHcQ',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/cheapest-flights-within-k-stops',
             'https://leetcode.com/problems/cheapest-flights-within-k-stops/',
+            NULL,
             28
         ),
 (
@@ -5059,6 +5465,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/minimum-multiplications-to-reach-end',
             'https://www.youtube.com/watch?v=_BvEJ3VIDWw&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=39',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/minimum-multiplications-to-reach-end',
+            NULL,
             NULL,
             29
         ),
@@ -5072,6 +5479,7 @@ VALUES
             'https://youtu.be/_-0mx0SmYxA',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/number-of-ways-to-arrive-at-destination',
             'https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/',
+            NULL,
             30
         ),
 (
@@ -5082,6 +5490,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/bellman-ford-algorithm',
             'https://youtu.be/0vVofAhAYjc',
+            NULL,
             NULL,
             NULL,
             31
@@ -5096,6 +5505,7 @@ VALUES
             'https://www.youtube.com/watch?v=YbY8cVwWAvw&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn&index=42',
             NULL,
             NULL,
+            NULL,
             32
         ),
 (
@@ -5108,6 +5518,7 @@ VALUES
             'https://youtu.be/9XybHVqTHcQ',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/find-city-smallest-number-neighbors-threshold-distance',
             'https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/',
+            NULL,
             33
         ),
 (
@@ -5120,6 +5531,7 @@ VALUES
             NULL,
             'https://takeuforward.org/blogs/data-structure-and-algorithm/network-delay-time',
             'https://leetcode.com/problems/network-delay-time/',
+            NULL,
             34
         ),
 (
@@ -5132,6 +5544,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/swim-in-rising-water/',
+            NULL,
             35
         ),
 (
@@ -5142,6 +5555,7 @@ VALUES
             'Easy',
             NULL,
             'https://youtu.be/ZSPjZuZWCME',
+            NULL,
             NULL,
             NULL,
             36
@@ -5156,6 +5570,7 @@ VALUES
             'https://youtu.be/aBxjDBC4M1U',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/disjoint-set-union',
             NULL,
+            NULL,
             37
         ),
 (
@@ -5168,6 +5583,7 @@ VALUES
             'https://youtu.be/mJcZjjKzeqk',
             NULL,
             'https://leetcode.com/problems/connecting-cities-with-minimum-cost/',
+            NULL,
             38
         ),
 (
@@ -5180,6 +5596,7 @@ VALUES
             'https://youtu.be/FYrl7iz9_ZU',
             NULL,
             'https://leetcode.com/problems/number-of-operations-to-make-network-connected/',
+            NULL,
             39
         ),
 (
@@ -5192,6 +5609,7 @@ VALUES
             'https://youtu.be/FMwpt_aQOGw',
             NULL,
             'https://leetcode.com/problems/accounts-merge/',
+            NULL,
             40
         ),
 (
@@ -5204,6 +5622,7 @@ VALUES
             'https://youtu.be/Rn6B-Q4SNyA',
             NULL,
             'https://leetcode.com/problems/number-of-islands-ii/',
+            NULL,
             41
         ),
 (
@@ -5216,6 +5635,7 @@ VALUES
             'https://youtu.be/lgiz0Oup6gM',
             NULL,
             'https://leetcode.com/problems/making-a-large-island/',
+            NULL,
             42
         ),
 (
@@ -5228,6 +5648,7 @@ VALUES
             'https://youtu.be/OwMNX8SPavM',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/most-stones-removed-same-row-column',
             'https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/',
+            NULL,
             43
         ),
 (
@@ -5240,6 +5661,7 @@ VALUES
             'https://www.youtube.com/watch?v=V8qIqJxCioo&list=PLgUwDviBIf0rGEWe64KWas0Nryn7SCRWw&index=27',
             NULL,
             'https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings/discuss/766485/kosaraju-algorithm-on',
+            NULL,
             44
         ),
 (
@@ -5252,6 +5674,7 @@ VALUES
             'https://youtu.be/qrAub5z8FeA',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/bridges-in-graph-tarjan-algorithm',
             'https://leetcode.com/problems/critical-connections-in-a-network/',
+            NULL,
             45
         ),
 (
@@ -5263,6 +5686,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/articulation-point-in-graph',
             'https://youtu.be/j1QDfU21iZk',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/articulation-points-in-graph',
+            NULL,
             NULL,
             46
         ),
@@ -5276,6 +5700,7 @@ VALUES
             'https://youtu.be/tyB0ztf0DNY',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/dynamic-programming-memoization-tabulation',
             NULL,
+            NULL,
             1
         ),
 (
@@ -5288,6 +5713,7 @@ VALUES
             'https://youtu.be/mLfjzJsN8us',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/climbing-stairs',
             'https://leetcode.com/problems/climbing-stairs/',
+            NULL,
             2
         ),
 (
@@ -5299,6 +5725,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/frog-jump',
             'https://www.youtube.com/watch?v=EgG3jsGoPvQ',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/frog-jump-minimum-energy',
+            NULL,
             NULL,
             3
         ),
@@ -5312,6 +5739,7 @@ VALUES
             'https://www.youtube.com/watch?v=Kmh3rhyEtB8',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/frog-jump-with-k-distances',
             NULL,
+            NULL,
             4
         ),
 (
@@ -5324,6 +5752,7 @@ VALUES
             'https://www.youtube.com/watch?v=GrMBfJNk_NY',
             NULL,
             'https://leetcode.com/problems/house-robber/',
+            NULL,
             5
         ),
 (
@@ -5336,6 +5765,7 @@ VALUES
             'https://www.youtube.com/watch?v=3WaxQMELSkw',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/house-robber-ii',
             'https://leetcode.com/problems/house-robber/',
+            NULL,
             6
         ),
 (
@@ -5347,6 +5777,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/ninja''s-training',
             'https://www.youtube.com/watch?v=AE39gJYuRog',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/ninjas-training',
+            NULL,
             NULL,
             7
         ),
@@ -5360,6 +5791,7 @@ VALUES
             'https://www.youtube.com/watch?v=sdE0A2Oxofw',
             NULL,
             'https://leetcode.com/problems/unique-paths/',
+            NULL,
             8
         ),
 (
@@ -5372,6 +5804,7 @@ VALUES
             'https://www.youtube.com/watch?v=TmhpgXScLyY',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/unique-paths-ii-obstacles',
             'https://leetcode.com/problems/unique-paths-ii/',
+            NULL,
             9
         ),
 (
@@ -5384,6 +5817,7 @@ VALUES
             'https://youtu.be/_rgTlyky1uQ',
             NULL,
             'https://leetcode.com/problems/minimum-falling-path-sum/',
+            NULL,
             10
         ),
 (
@@ -5396,6 +5830,7 @@ VALUES
             'https://www.youtube.com/watch?v=SrP-PiLSYC0',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/triangle-minimum-path-sum',
             'https://leetcode.com/problems/triangle/',
+            NULL,
             11
         ),
 (
@@ -5408,6 +5843,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/cherry-pickup-ii/',
+            NULL,
             12
         ),
 (
@@ -5420,6 +5856,7 @@ VALUES
             'https://youtu.be/auS1fynpnjo',
             NULL,
             'https://leetcode.com/problems/count-square-submatrices-with-all-ones/',
+            NULL,
             13
         ),
 (
@@ -5432,6 +5869,7 @@ VALUES
             'https://youtu.be/excAOvwF_Wk',
             NULL,
             'https://leetcode.com/problems/best-time-to-buy-and-sell-stock/',
+            NULL,
             14
         ),
 (
@@ -5444,6 +5882,7 @@ VALUES
             'https://youtu.be/nGJmxkUJQGs',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/best-time-to-buy-and-sell-stock-ii',
             'https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/',
+            NULL,
             15
         ),
 (
@@ -5456,6 +5895,7 @@ VALUES
             'https://youtu.be/-uQGzhYj8BQ',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/best-time-to-buy-and-sell-stock-iii',
             'https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/',
+            NULL,
             16
         ),
 (
@@ -5468,6 +5908,7 @@ VALUES
             'https://youtu.be/IV1dHbk5CDc',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/best-time-to-buy-and-sell-stock-iv',
             'https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/',
+            NULL,
             17
         ),
 (
@@ -5480,6 +5921,7 @@ VALUES
             'https://youtu.be/k4eK-vEmnKg',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/best-time-to-buy-and-sell-stock-with-transaction-fee',
             'https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/',
+            NULL,
             18
         ),
 (
@@ -5492,6 +5934,7 @@ VALUES
             'https://youtu.be/IGIe46xw3YY',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/best-time-to-buy-and-sell-stock-with-cooldown',
             'https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/',
+            NULL,
             19
         ),
 (
@@ -5502,6 +5945,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/subset-sum-equals-to-target',
             'https://www.youtube.com/watch?v=rYkfBRtMJr8&list=PLgUwDviBIf0p4ozDR_kJJkONnb1wdx2Ma&index=52',
+            NULL,
             NULL,
             NULL,
             20
@@ -5516,6 +5960,7 @@ VALUES
             'https://www.youtube.com/watch?v=7win3dcgo3k',
             NULL,
             'https://leetcode.com/problems/partition-equal-subset-sum/',
+            NULL,
             21
         ),
 (
@@ -5528,6 +5973,7 @@ VALUES
             'https://www.youtube.com/watch?v=GS_OqZb2CWc',
             NULL,
             'https://leetcode.com/problems/last-stone-weight-ii/',
+            NULL,
             22
         ),
 (
@@ -5539,6 +5985,7 @@ VALUES
             'https://takeuforward.org/practice/dsa/count-subsets-with-sum-k',
             'https://www.youtube.com/watch?v=ZHyb-A2Mte4',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/count-subsets-with-sum-k',
+            NULL,
             NULL,
             23
         ),
@@ -5552,6 +5999,7 @@ VALUES
             'https://www.youtube.com/watch?v=zoilQD1kYSg',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/count-partitions-with-a-given-difference',
             NULL,
+            NULL,
             24
         ),
 (
@@ -5562,6 +6010,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/0-and-1-knapsack',
             'https://youtu.be/GqOmJHQZivw',
+            NULL,
             NULL,
             NULL,
             25
@@ -5576,6 +6025,7 @@ VALUES
             'https://www.youtube.com/watch?v=myPeWb3Y68A',
             NULL,
             'https://leetcode.com/problems/coin-change/',
+            NULL,
             26
         ),
 (
@@ -5588,6 +6038,7 @@ VALUES
             'https://www.youtube.com/watch?v=b3GD8263-PQ',
             NULL,
             'https://leetcode.com/problems/target-sum/',
+            NULL,
             27
         ),
 (
@@ -5600,6 +6051,7 @@ VALUES
             'https://www.youtube.com/watch?v=HgyouUi11zk',
             NULL,
             'https://leetcode.com/problems/coin-change-ii/',
+            NULL,
             28
         ),
 (
@@ -5612,6 +6064,7 @@ VALUES
             'https://youtu.be/OgvOZ6OrJoY',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/unbounded-knapsack',
             NULL,
+            NULL,
             29
         ),
 (
@@ -5622,6 +6075,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/rod-cutting-problem',
             'https://youtu.be/mO8XpGoJwuo',
+            NULL,
             NULL,
             NULL,
             30
@@ -5636,6 +6090,7 @@ VALUES
             'https://youtu.be/on2hvxBXJH4',
             NULL,
             'https://leetcode.com/problems/longest-increasing-subsequence/',
+            NULL,
             31
         ),
 (
@@ -5646,6 +6101,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/print-longest-increasing-subsequence',
             'https://youtu.be/IFfYfonAFGc',
+            NULL,
             NULL,
             NULL,
             32
@@ -5660,6 +6116,7 @@ VALUES
             'https://youtu.be/gDuZwBW9VvM',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/largest-divisible-subset',
             'https://leetcode.com/problems/largest-divisible-subset/',
+            NULL,
             33
         ),
 (
@@ -5672,6 +6129,7 @@ VALUES
             'https://youtu.be/YY8iBaYcc4g',
             NULL,
             'https://leetcode.com/problems/longest-string-chain/',
+            NULL,
             34
         ),
 (
@@ -5682,6 +6140,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/longest-bitonic-subsequence',
             'https://youtu.be/y4vN0WNdrlg',
+            NULL,
             NULL,
             NULL,
             35
@@ -5696,6 +6155,7 @@ VALUES
             'https://youtu.be/cKVl1TFdNXg',
             NULL,
             'https://leetcode.com/problems/number-of-longest-increasing-subsequence/',
+            NULL,
             36
         ),
 (
@@ -5708,6 +6168,7 @@ VALUES
             'https://youtu.be/-zI4mrF2Pb4',
             NULL,
             'https://leetcode.com/problems/longest-common-subsequence/',
+            NULL,
             37
         ),
 (
@@ -5718,6 +6179,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/longest-common-substring',
             'https://youtu.be/_wP9mWNPL5w',
+            NULL,
             NULL,
             NULL,
             38
@@ -5732,6 +6194,7 @@ VALUES
             'https://youtu.be/6i_T5kkfv4A',
             NULL,
             'https://leetcode.com/problems/longest-palindromic-subsequence/',
+            NULL,
             39
         ),
 (
@@ -5744,6 +6207,7 @@ VALUES
             'https://www.youtube.com/watch?v=xPBLEj41rFU',
             NULL,
             'https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/',
+            NULL,
             40
         ),
 (
@@ -5756,6 +6220,7 @@ VALUES
             'https://www.youtube.com/watch?v=yMnH0jrir0Q',
             NULL,
             'https://leetcode.com/problems/delete-operation-for-two-strings/',
+            NULL,
             41
         ),
 (
@@ -5768,6 +6233,7 @@ VALUES
             'https://youtu.be/xElxAuBcvsU',
             NULL,
             'https://leetcode.com/problems/shortest-common-supersequence/',
+            NULL,
             42
         ),
 (
@@ -5780,6 +6246,7 @@ VALUES
             'https://youtu.be/nVG7eTiD2bY',
             NULL,
             'https://leetcode.com/problems/distinct-subsequences/',
+            NULL,
             43
         ),
 (
@@ -5792,6 +6259,7 @@ VALUES
             'https://youtu.be/fJaKO8FbDdo',
             NULL,
             'https://leetcode.com/problems/edit-distance/',
+            NULL,
             44
         ),
 (
@@ -5804,6 +6272,7 @@ VALUES
             'https://youtu.be/ZmlQ3vgAOMo',
             NULL,
             'https://leetcode.com/problems/wildcard-matching/',
+            NULL,
             45
         ),
 (
@@ -5816,6 +6285,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/word-break/',
+            NULL,
             46
         ),
 (
@@ -5828,6 +6298,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/count-palindromic-subsequences/',
+            NULL,
             47
         ),
 (
@@ -5838,6 +6309,7 @@ VALUES
             'Easy',
             'https://takeuforward.org/practice/dsa/matrix-chain-multiplication',
             'https://youtu.be/vRVfmbCFW7Y',
+            NULL,
             NULL,
             NULL,
             48
@@ -5852,6 +6324,7 @@ VALUES
             'https://youtu.be/Yz4LlDSlkns',
             NULL,
             'https://leetcode.com/problems/burst-balloons/',
+            NULL,
             49
         ),
 (
@@ -5864,6 +6337,7 @@ VALUES
             'https://youtu.be/_H8V5hJUGd0',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/palindrome-partitioning-ii-minimum-cuts',
             'https://leetcode.com/problems/palindrome-partitioning-ii/',
+            NULL,
             50
         ),
 (
@@ -5876,6 +6350,7 @@ VALUES
             'https://youtu.be/PhWWJmaKfMc',
             NULL,
             'https://leetcode.com/problems/partition-array-for-maximum-sum/',
+            NULL,
             51
         ),
 (
@@ -5888,6 +6363,7 @@ VALUES
             'https://youtu.be/xwomavsC86c',
             NULL,
             'https://leetcode.com/problems/minimum-cost-to-cut-a-stick/',
+            NULL,
             52
         ),
 (
@@ -5900,6 +6376,7 @@ VALUES
             'https://youtu.be/MM7fXopgyjw',
             NULL,
             'https://leetcode.com/problems/parsing-a-boolean-expression/',
+            NULL,
             53
         ),
 (
@@ -5910,6 +6387,7 @@ VALUES
             'Easy',
             NULL,
             'https://youtu.be/5iyuU4hQFrw',
+            NULL,
             NULL,
             NULL,
             1
@@ -5924,6 +6402,7 @@ VALUES
             'https://www.youtube.com/watch?v=dBGUmUQhjaM&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/trie-implementation',
             'https://leetcode.com/problems/implement-trie-prefix-tree/',
+            NULL,
             2
         ),
 (
@@ -5936,6 +6415,7 @@ VALUES
             NULL,
             'https://takeuforward.org/blogs/data-structure-and-algorithm/trie-ii-count-words-erase',
             'https://leetcode.com/problems/implement-trie-ii-prefix-tree/',
+            NULL,
             3
         ),
 (
@@ -5948,6 +6428,7 @@ VALUES
             'https://www.youtube.com/watch?v=AWnBa91lThI&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=3',
             NULL,
             'https://leetcode.com/problems/longest-word-with-all-prefixes/',
+            NULL,
             4
         ),
 (
@@ -5960,6 +6441,7 @@ VALUES
             'https://www.youtube.com/watch?v=RV0QeTyHZxo&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=4',
             NULL,
             'https://leetcode.com/problems/number-of-distinct-substrings-in-a-string/',
+            NULL,
             5
         ),
 (
@@ -5972,6 +6454,7 @@ VALUES
             'https://www.youtube.com/watch?v=EIhAwfHubE8&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=6',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/maximum-xor-of-two-numbers-in-an-array',
             'https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/',
+            NULL,
             6
         ),
 (
@@ -5984,6 +6467,7 @@ VALUES
             'https://www.youtube.com/watch?v=Q8LhG9Pi5KM&list=PLgUwDviBIf0pcIDCZnxhv0LkHf5KzG9zp&index=7',
             'https://takeuforward.org/blogs/data-structure-and-algorithm/maximum-xor-queries-trie',
             'https://leetcode.com/problems/maximum-xor-with-an-element-from-array/',
+            NULL,
             7
         ),
 (
@@ -5996,6 +6480,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/reverse-words-in-a-string/',
+            NULL,
             1
         ),
 (
@@ -6008,6 +6493,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/',
+            NULL,
             2
         ),
 (
@@ -6020,6 +6506,7 @@ VALUES
             NULL,
             'https://takeuforward.org/blogs/data-structure-and-algorithm/count-and-say',
             'https://leetcode.com/problems/count-and-say/',
+            NULL,
             3
         ),
 (
@@ -6031,6 +6518,7 @@ VALUES
             NULL,
             NULL,
             'https://takeuforward.org/blogs/data-structure-and-algorithm/string-hashing-rolling-hash',
+            NULL,
             NULL,
             4
         ),
@@ -6044,6 +6532,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/repeated-string-match/discuss/416144/Rabin-Karp-algorithm-C%2B%2B-implementation',
+            NULL,
             5
         ),
 (
@@ -6053,6 +6542,7 @@ VALUES
             'Z function',
             'Easy',
             'https://takeuforward.org/practice/dsa/z-function',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -6068,6 +6558,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/implement-strstr/',
+            NULL,
             7
         ),
 (
@@ -6080,6 +6571,7 @@ VALUES
             NULL,
             NULL,
             'https://leetcode.com/problems/shortest-palindrome/',
+            NULL,
             8
         ),
 (
@@ -6092,6 +6584,7 @@ VALUES
             NULL,
             'https://takeuforward.org/blogs/data-structure-and-algorithm/longest-happy-prefix',
             'https://leetcode.com/problems/longest-happy-prefix/',
+            NULL,
             9
         ),
 (
@@ -6101,6 +6594,7 @@ VALUES
             'Print all primes till N',
             'Easy',
             'https://takeuforward.org/practice/dsa/print-all-primes-till-n',
+            NULL,
             NULL,
             NULL,
             NULL,
@@ -6116,6 +6610,7 @@ VALUES
             'https://youtu.be/LT7XhVdeRyg?si=6HkjQokJRPTFai21',
             NULL,
             NULL,
+            NULL,
             2
         ),
 (
@@ -6128,6 +6623,7 @@ VALUES
             'https://youtu.be/g5Fuxn_AvSk?si=fv6Q-Po7wrMW0a5n',
             NULL,
             'https://leetcode.com/problems/count-primes/',
+            NULL,
             3
         );
 
