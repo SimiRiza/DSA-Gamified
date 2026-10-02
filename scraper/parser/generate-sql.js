@@ -1,80 +1,282 @@
 const fs = require("fs");
 const path = require("path");
 
-const sheetsPath = path.join(__dirname, "sheets.json");
-const patternsPath = path.join(__dirname, "patterns.json");
-const problemsPath = path.join(__dirname, "problems.json");
-const outputPath = path.join(__dirname, "../../database/seed.sql");
+// --------------------------------------------------
+// FILE PATHS
+// --------------------------------------------------
 
-const sheets = JSON.parse(fs.readFileSync(sheetsPath, "utf8"));
-const patterns = JSON.parse(fs.readFileSync(patternsPath, "utf8"));
-const problems = JSON.parse(fs.readFileSync(problemsPath, "utf8"));
+const sheetsPath = path.join(
+    __dirname,
+    "sheets.json"
+);
+
+const patternsPath = path.join(
+    __dirname,
+    "patterns.json"
+);
+
+const problemsPath = path.join(
+    __dirname,
+    "problems.json"
+);
+
+// --------------------------------------------------
+// MANUAL EDITORIALS
+// --------------------------------------------------
+
+const manualEditorialsPath = path.join(
+    __dirname,
+    "manual_editorials.json"
+);
+
+const outputPath = path.join(
+    __dirname,
+    "../../database/seed.sql"
+);
+
+// --------------------------------------------------
+// READ JSON FILES
+// --------------------------------------------------
+
+const sheets = JSON.parse(
+    fs.readFileSync(sheetsPath, "utf8")
+);
+
+const patterns = JSON.parse(
+    fs.readFileSync(patternsPath, "utf8")
+);
+
+const problems = JSON.parse(
+    fs.readFileSync(problemsPath, "utf8")
+);
+
+// --------------------------------------------------
+// READ MANUAL EDITORIALS
+// --------------------------------------------------
+
+// If manual_editorials.json does not exist,
+// use an empty object instead of crashing.
+
+let manualEditorials = {};
+
+if (fs.existsSync(manualEditorialsPath)) {
+    manualEditorials = JSON.parse(
+        fs.readFileSync(
+            manualEditorialsPath,
+            "utf8"
+        )
+    );
+}
+
+// --------------------------------------------------
+// SQL VALUE HELPER
+// --------------------------------------------------
 
 function sqlValue(value) {
-    if (value === null || value === undefined) {
+    if (
+        value === null ||
+        value === undefined
+    ) {
         return "NULL";
     }
+
     if (typeof value === "number") {
         return String(value);
     }
+
     return `'${String(value).replace(/'/g, "''")}'`;
 }
 
+// --------------------------------------------------
+// NORMALIZE DIFFICULTY
+// --------------------------------------------------
+
 function normalizeDifficulty(value) {
-    if (value === null || value === undefined) {
+    if (
+        value === null ||
+        value === undefined
+    ) {
         return null;
     }
 
-    const str = String(value).trim().toLowerCase();
+    const str =
+        String(value)
+            .trim()
+            .toLowerCase();
 
-    if (str === "easy") return "Easy";
-    if (str === "medium") return "Medium";
-    if (str === "hard") return "Hard";
+    if (str === "easy") {
+        return "Easy";
+    }
+
+    if (str === "medium") {
+        return "Medium";
+    }
+
+    if (str === "hard") {
+        return "Hard";
+    }
 
     return value;
 }
 
+// --------------------------------------------------
+// GET RECOMMENDED EDITORIAL
+// --------------------------------------------------
+
+function getRecommendedEditorial(problem) {
+
+    // If LeetCode exists,
+    // we do NOT need a recommended editorial.
+    if (problem.leetcode_url) {
+        return null;
+    }
+
+    // For problems without LeetCode,
+    // look for a manually curated editorial
+    // using the exact problem name.
+    return (
+        manualEditorials[
+            problem.problem_name
+        ] || null
+    );
+}
+
+// --------------------------------------------------
+// SHEETS
+// --------------------------------------------------
 
 const sheetRows = sheets.map((sheet) => {
-    return `(${sqlValue(sheet.sheet_id)}, ${sqlValue(sheet.title)})`;
+    return `(
+        ${sqlValue(sheet.sheet_id)},
+        ${sqlValue(sheet.title)}
+    )`;
 });
 
-const sheetsSQL = `-- ============================================
+const sheetsSQL = `
+-- ============================================
 -- SHEETS
 -- ============================================
 
-INSERT INTO sheets (id, title)
+INSERT INTO sheets (
+    id,
+    title
+)
 VALUES
 ${sheetRows.join(",\n")};
+
 `;
 
-const patternsRows = patterns.map((pattern, index) => {
-    return `(${sqlValue(pattern.pattern_id)}, ${sqlValue(pattern.sheet_id)}, ${sqlValue(pattern.source_id)}, ${sqlValue(pattern.pattern_name)}, ${sqlValue(index + 1)})`;
-});
+// --------------------------------------------------
+// PATTERNS
+// --------------------------------------------------
 
-const patternsSQL = `-- ============================================
+const patternsRows = patterns.map(
+    (pattern, index) => {
+        return `(
+            ${sqlValue(pattern.pattern_id)},
+            ${sqlValue(pattern.sheet_id)},
+            ${sqlValue(pattern.source_id)},
+            ${sqlValue(pattern.pattern_name)},
+            ${sqlValue(index + 1)}
+        )`;
+    }
+);
+
+const patternsSQL = `
+-- ============================================
 -- PATTERNS
 -- ============================================
 
-INSERT INTO patterns (id, sheet_id, source_id, pattern_name, order_number)
+INSERT INTO patterns (
+    id,
+    sheet_id,
+    source_id,
+    pattern_name,
+    order_number
+)
 VALUES
 ${patternsRows.join(",\n")};
+
 `;
+
+// --------------------------------------------------
+// PROBLEM ORDER
+// --------------------------------------------------
 
 const problemOrderMap = {};
 
-const problemRows = problems.map((problem) => {
-    if (!problemOrderMap[problem.pattern_id]) {
-        problemOrderMap[problem.pattern_id] = 1;
+// --------------------------------------------------
+// EDITORIAL COUNTERS
+// --------------------------------------------------
+
+let recommendedEditorialCount = 0;
+
+let missingRecommendedEditorialCount = 0;
+
+// --------------------------------------------------
+// PROBLEMS
+// --------------------------------------------------
+
+const problemRows = problems.map(
+    (problem) => {
+
+        if (
+            !problemOrderMap[problem.pattern_id]
+        ) {
+            problemOrderMap[
+                problem.pattern_id
+            ] = 1;
+        }
+
+        const currentOrder =
+            problemOrderMap[
+                problem.pattern_id
+            ];
+
+        problemOrderMap[
+            problem.pattern_id
+        ]++;
+
+        // ------------------------------------------
+        // RECOMMENDED EDITORIAL
+        // ------------------------------------------
+
+        const recommendedEditorial =
+            getRecommendedEditorial(problem);
+
+        if (recommendedEditorial) {
+            recommendedEditorialCount++;
+        }
+        else if (!problem.leetcode_url) {
+            missingRecommendedEditorialCount++;
+        }
+
+        // ------------------------------------------
+        // SQL ROW
+        // ------------------------------------------
+
+        return `(
+            ${sqlValue(problem.problem_id)},
+            ${sqlValue(problem.pattern_id)},
+            ${sqlValue(problem.subcategory_name)},
+            ${sqlValue(problem.problem_name)},
+            ${sqlValue(
+                normalizeDifficulty(
+                    problem.difficulty
+                )
+            )},
+            ${sqlValue(problem.practice_url)},
+            ${sqlValue(problem.youtube_url)},
+            ${sqlValue(problem.article_url)},
+            ${sqlValue(problem.leetcode_url)},
+            ${sqlValue(recommendedEditorial)},
+            ${sqlValue(currentOrder)}
+        )`;
     }
+);
 
-    const currentOrder = problemOrderMap[problem.pattern_id];
-    problemOrderMap[problem.pattern_id]++;
-
-    return `(${sqlValue(problem.problem_id)}, ${sqlValue(problem.pattern_id)}, ${sqlValue(problem.subcategory_name)}, ${sqlValue(problem.problem_name)}, ${sqlValue(normalizeDifficulty(problem.difficulty))}, ${sqlValue(problem.official_article)}, ${sqlValue(problem.recommended_article)}, ${sqlValue(problem.official_youtube)}, ${sqlValue(problem.recommended_youtube)}, ${sqlValue(problem.official_leetcode)}, ${sqlValue(problem.recommended_leetcode)}, ${sqlValue(problem.plus)}, ${sqlValue(problem.official_editorial)}, ${sqlValue(problem.recommended_editorial)}, ${sqlValue(currentOrder)})`;
-});
-
-const problemsSQL = `-- ============================================
+const problemsSQL = `
+-- ============================================
 -- PROBLEMS
 -- ============================================
 
@@ -84,21 +286,21 @@ INSERT INTO problems (
     subcategory_name,
     problem_name,
     difficulty,
-    official_article,
-    recommended_article,
-    official_youtube,
-    recommended_youtube,
-    official_leetcode,
-    recommended_leetcode,
-    plus,
-    official_editorial,
-    recommended_editorial,
+    practice_url,
+    youtube_url,
+    article_url,
+    leetcode_url,
+    recommended_editorial_url,
     order_number
 )
 VALUES
 ${problemRows.join(",\n")};
 
 `;
+
+// --------------------------------------------------
+// FINAL SQL
+// --------------------------------------------------
 
 const finalSQL = `-- ============================================
 -- DSA Quest - PostgreSQL Seed
@@ -107,14 +309,44 @@ const finalSQL = `-- ============================================
 
 ${sheetsSQL}${patternsSQL}${problemsSQL}`;
 
-fs.writeFileSync(outputPath, finalSQL);
+// --------------------------------------------------
+// WRITE FILE
+// --------------------------------------------------
 
-console.log(`Seed SQL generated successfully at: ${outputPath}`);
+fs.writeFileSync(
+    outputPath,
+    finalSQL
+);
 
-console.log("Seed SQL generated successfully!");
-console.log("Output:", outputPath);
-console.log("Inserted sheets:", sheets.length);
-console.log("Inserted patterns:", patterns.length);
-console.log("Inserted problems:", problems.length);
+// --------------------------------------------------
+// SUMMARY
+// --------------------------------------------------
 
+console.log(
+    `Seed SQL generated successfully at: ${outputPath}`
+);
 
+console.log(
+    "Inserted sheets:",
+    sheets.length
+);
+
+console.log(
+    "Inserted patterns:",
+    patterns.length
+);
+
+console.log(
+    "Inserted problems:",
+    problems.length
+);
+
+console.log(
+    "Recommended editorials applied:",
+    recommendedEditorialCount
+);
+
+console.log(
+    "Problems without LeetCode and without recommended editorial:",
+    missingRecommendedEditorialCount
+);
