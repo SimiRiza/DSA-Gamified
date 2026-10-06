@@ -1,110 +1,122 @@
 [
   {
     "pattern_id": 1,
-    "source_id": 683,
+    "source_id": 1995,
     "sheet_id": 1,
-    "pattern_name": "Learn the basics"
+    "pattern_name": "Beginner Problems"
   },
   {
     "pattern_id": 2,
-    "source_id": 681,
+    "source_id": 1996,
     "sheet_id": 1,
-    "pattern_name": "Learn Important Sorting Techniques"
+    "pattern_name": "Sorting "
   },
   {
     "pattern_id": 3,
-    "source_id": 686,
+    "source_id": 1997,
     "sheet_id": 1,
-    "pattern_name": "Solve Problems on Arrays [Easy -> Medium -> Hard]"
+    "pattern_name": "Arrays"
   },
   {
     "pattern_id": 4,
-    "source_id": 673,
+    "source_id": 1998,
     "sheet_id": 1,
-    "pattern_name": "Binary Search [1D, 2D Arrays, Search Space]"
+    "pattern_name": "Hashing"
   },
   {
     "pattern_id": 5,
-    "source_id": 689,
+    "source_id": 1999,
     "sheet_id": 1,
-    "pattern_name": "Strings [Basic and Medium]"
+    "pattern_name": "Binary Search"
   },
   {
     "pattern_id": 6,
-    "source_id": 682,
+    "source_id": 17176,
     "sheet_id": 1,
-    "pattern_name": "Learn LinkedList [Single LL, Double LL, Medium, Hard Problems]"
+    "pattern_name": "Strings (Basic and Medium)"
   },
   {
     "pattern_id": 7,
-    "source_id": 684,
+    "source_id": 2000,
     "sheet_id": 1,
-    "pattern_name": "Recursion [PatternWise]"
+    "pattern_name": "Recursion"
   },
   {
     "pattern_id": 8,
-    "source_id": 676,
+    "source_id": 2001,
     "sheet_id": 1,
-    "pattern_name": "Bit Manipulation [Concepts & Problems]"
+    "pattern_name": "Linked-List"
   },
   {
     "pattern_id": 9,
-    "source_id": 687,
+    "source_id": 2002,
     "sheet_id": 1,
-    "pattern_name": "Stack and Queues [Learning, Pre-In-Post-fix, Monotonic Stack, Implementation]"
+    "pattern_name": "Bit Manipulation"
   },
   {
     "pattern_id": 10,
-    "source_id": 685,
+    "source_id": 2003,
     "sheet_id": 1,
-    "pattern_name": "Sliding Window & Two Pointer Combined Problems"
+    "pattern_name": "Greedy Algorithms"
   },
   {
     "pattern_id": 11,
-    "source_id": 680,
+    "source_id": 2004,
     "sheet_id": 1,
-    "pattern_name": "Heaps [Learning, Medium, Hard Problems]"
+    "pattern_name": "Sliding Window / 2 Pointer"
   },
   {
     "pattern_id": 12,
-    "source_id": 679,
+    "source_id": 2005,
     "sheet_id": 1,
-    "pattern_name": "Greedy Algorithms [Easy, Medium/Hard]"
+    "pattern_name": "Stack / Queues"
   },
   {
     "pattern_id": 13,
-    "source_id": 675,
+    "source_id": 2006,
     "sheet_id": 1,
-    "pattern_name": "Binary Trees [Traversals, Medium and Hard Problems]"
+    "pattern_name": "Binary Trees"
   },
   {
     "pattern_id": 14,
-    "source_id": 674,
+    "source_id": 2007,
     "sheet_id": 1,
-    "pattern_name": "Binary Search Trees [Concept and Problems]"
+    "pattern_name": "Binary Search Trees"
   },
   {
     "pattern_id": 15,
-    "source_id": 678,
+    "source_id": 2008,
     "sheet_id": 1,
-    "pattern_name": "Graphs [Concepts & Problems]"
+    "pattern_name": "Heaps"
   },
   {
     "pattern_id": 16,
-    "source_id": 677,
+    "source_id": 2009,
     "sheet_id": 1,
-    "pattern_name": "Dynamic Programming [Patterns and Problems]"
+    "pattern_name": "Graphs"
   },
   {
     "pattern_id": 17,
-    "source_id": 690,
+    "source_id": 2010,
+    "sheet_id": 1,
+    "pattern_name": "Dynamic Programming"
+  },
+  {
+    "pattern_id": 18,
+    "source_id": 2011,
     "sheet_id": 1,
     "pattern_name": "Tries"
   },
   {
-    "pattern_id": 18,
-    "source_id": 688,
+    "pattern_id": 19,
+    "source_id": 2012,
     "sheet_id": 1,
-    "pattern_name": "Strings"
+    "pattern_name": "Strings (Advanced Algo)"
+  },
+  {
+    "pattern_id": 20,
+    "source_id": 2013,
+    "sheet_id": 1,
+    "pattern_name": "Maths"
   }
 ]

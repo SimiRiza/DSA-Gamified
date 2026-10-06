@@ -146,37 +146,127 @@ function Problems() {
                             }}
                         >
 
-                            {problem.official_article && (
+                            {/* TUF */}
+                            {problem.practice_url && (
                                 <a
-                                    href={problem.official_article}
+                                    href={problem.practice_url}
                                     target="_blank"
                                     rel="noreferrer"
+                                    style={{
+                                        padding: "8px 14px",
+                                        background: "#eef2ff",
+                                        color: "#3730a3",
+                                        borderRadius: "8px",
+                                        textDecoration: "none",
+                                        fontSize: "14px",
+                                        fontWeight: "500"
+                                    }}
                                 >
-                                    📖 Article
+                                    🎯 Solve on TUF
                                 </a>
                             )}
 
-                            {problem.official_youtube && (
+                            {/* YouTube */}
+                            {problem.youtube_url && (
                                 <a
-                                    href={problem.official_youtube}
+                                    href={problem.youtube_url}
                                     target="_blank"
                                     rel="noreferrer"
+                                    style={{
+                                        padding: "8px 14px",
+                                        background: "#fff1f2",
+                                        color: "#be123c",
+                                        borderRadius: "8px",
+                                        textDecoration: "none",
+                                        fontSize: "14px",
+                                        fontWeight: "500"
+                                    }}
                                 >
-                                    ▶️ YouTube
+                                    ▶️ Watch YouTube
                                 </a>
                             )}
 
-                            {problem.official_leetcode && (
+                            {/* Article */}
+                            {problem.article_url && (
                                 <a
-                                    href={problem.official_leetcode}
+                                    href={problem.article_url}
                                     target="_blank"
                                     rel="noreferrer"
+                                    style={{
+                                        padding: "8px 14px",
+                                        background: "#f0fdf4",
+                                        color: "#166534",
+                                        borderRadius: "8px",
+                                        textDecoration: "none",
+                                        fontSize: "14px",
+                                        fontWeight: "500"
+                                    }}
                                 >
-                                    💻 LeetCode
+                                    📖 Read Article
+                                </a>
+                            )}
+
+                            {/* LeetCode */}
+                            {problem.leetcode_url && (
+                                <a
+                                    href={problem.leetcode_url}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    style={{
+                                        padding: "8px 14px",
+                                        background: "#fff7ed",
+                                        color: "#c2410c",
+                                        borderRadius: "8px",
+                                        textDecoration: "none",
+                                        fontSize: "14px",
+                                        fontWeight: "500"
+                                    }}
+                                >
+                                    💻 Solve on LeetCode
+                                </a>
+                            )}
+
+                            {/* Recommended Editorial */}
+                            {problem.recommended_editorial_url && (
+                                <a
+                                    href={problem.recommended_editorial_url}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    style={{
+                                        padding: "8px 14px",
+                                        background: "#f5f3ff",
+                                        color: "#6d28d9",
+                                        borderRadius: "8px",
+                                        textDecoration: "none",
+                                        fontSize: "14px",
+                                        fontWeight: "600"
+                                    }}
+                                >
+                                    📚 Recommended Editorial
                                 </a>
                             )}
 
                         </div>
+
+                        {/* Explanation for recommended editorial */}
+                        {!problem.leetcode_url &&
+                            problem.recommended_editorial_url && (
+                                <div
+                                    style={{
+                                        marginTop: "14px",
+                                        padding: "10px 14px",
+                                        background: "#faf5ff",
+                                        borderRadius: "8px",
+                                        color: "#6b21a8",
+                                        fontSize: "13px",
+                                        lineHeight: "1.5"
+                                    }}
+                                >
+                                    💡 LeetCode isn't available for this
+                                    problem, so we've provided a recommended
+                                    editorial instead.
+                                </div>
+                            )}
 
                     </div>
 

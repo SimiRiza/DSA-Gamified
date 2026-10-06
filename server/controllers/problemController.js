@@ -5,9 +5,20 @@ const getProblems = (req, res) => {
     const { patternId } = req.params;
 
     const sql = `
-        SELECT *
+        SELECT
+            id,
+            pattern_id,
+            subcategory_name,
+            problem_name,
+            difficulty,
+            practice_url,
+            youtube_url,
+            article_url,
+            leetcode_url,
+            recommended_editorial_url
         FROM problems
         WHERE pattern_id = $1
+        ORDER BY id;
     `;
 
     db.query(sql, [patternId], (err, result) => {
@@ -25,6 +36,8 @@ const getProblems = (req, res) => {
     });
 
 };
+
+
 const countProblems = (req, res) => {
 
     const sql = `
@@ -41,14 +54,17 @@ const countProblems = (req, res) => {
             });
 
         }
+
         const probCount = {
-            "totalProblems" : result.rows[0].count
-        }
+            "totalProblems": result.rows[0].count
+        };
+
         res.json(probCount);
 
     });
 
 };
+
 
 module.exports = {
     getProblems,
